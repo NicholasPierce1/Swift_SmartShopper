@@ -16,6 +16,7 @@ You’ll start by editing this README file to learn how to edit a file in Bitbuc
 4. Delete the following text: 
 5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
 6. Go back to the **Source** page.
+7. New change to push to remote
 
 ---
 

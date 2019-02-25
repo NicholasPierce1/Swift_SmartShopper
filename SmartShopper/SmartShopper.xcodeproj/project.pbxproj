@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA0B5091222358A00008C579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5090222358A00008C579 /* AppDelegate.swift */; };
+		DA0B5093222358A00008C579 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5092222358A00008C579 /* WelcomeScreenViewController.swift */; };
+		DA0B5095222358A00008C579 /* SearchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5094222358A00008C579 /* SearchItemViewController.swift */; };
+		DA0B5098222358A00008C579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0B5096222358A00008C579 /* Main.storyboard */; };
+		DA0B509A222358A40008C579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0B5099222358A40008C579 /* Assets.xcassets */; };
+		DA0B509D222358A40008C579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0B509B222358A40008C579 /* LaunchScreen.storyboard */; };
+		DA0B50A522235ACE0008C579 /* DepartmentLookupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50A422235ACE0008C579 /* DepartmentLookupViewController.swift */; };
+		DA0B50A722235AED0008C579 /* AdminLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50A622235AED0008C579 /* AdminLoginViewController.swift */; };
+		DA0B50A922235B0D0008C579 /* AdminCreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50A822235B0D0008C579 /* AdminCreateAccountViewController.swift */; };
+		DA0B50AB22235B2E0008C579 /* AdminFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50AA22235B2E0008C579 /* AdminFeaturesViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA0B508D222358A00008C579 /* SmartShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0B5090222358A00008C579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA0B5092222358A00008C579 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		DA0B5094222358A00008C579 /* SearchItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemViewController.swift; sourceTree = "<group>"; };
+		DA0B5097222358A00008C579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA0B5099222358A40008C579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA0B509C222358A40008C579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA0B509E222358A40008C579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA0B50A422235ACE0008C579 /* DepartmentLookupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentLookupViewController.swift; sourceTree = "<group>"; };
+		DA0B50A622235AED0008C579 /* AdminLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginViewController.swift; sourceTree = "<group>"; };
+		DA0B50A822235B0D0008C579 /* AdminCreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCreateAccountViewController.swift; sourceTree = "<group>"; };
+		DA0B50AA22235B2E0008C579 /* AdminFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminFeaturesViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA0B508A222358A00008C579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA0B5084222358A00008C579 = {
+			isa = PBXGroup;
+			children = (
+				DA0B508F222358A00008C579 /* SmartShopper */,
+				DA0B508E222358A00008C579 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA0B508E222358A00008C579 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA0B508D222358A00008C579 /* SmartShopper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA0B508F222358A00008C579 /* SmartShopper */ = {
+			isa = PBXGroup;
+			children = (
+				DA0B5090222358A00008C579 /* AppDelegate.swift */,
+				DA0B5092222358A00008C579 /* WelcomeScreenViewController.swift */,
+				DA0B5094222358A00008C579 /* SearchItemViewController.swift */,
+				DA0B5096222358A00008C579 /* Main.storyboard */,
+				DA0B50A422235ACE0008C579 /* DepartmentLookupViewController.swift */,
+				DA0B50A622235AED0008C579 /* AdminLoginViewController.swift */,
+				DA0B50A822235B0D0008C579 /* AdminCreateAccountViewController.swift */,
+				DA0B50AA22235B2E0008C579 /* AdminFeaturesViewController.swift */,
+				DA0B5099222358A40008C579 /* Assets.xcassets */,
+				DA0B509B222358A40008C579 /* LaunchScreen.storyboard */,
+				DA0B509E222358A40008C579 /* Info.plist */,
+			);
+			path = SmartShopper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA0B508C222358A00008C579 /* SmartShopper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA0B50A1222358A40008C579 /* Build configuration list for PBXNativeTarget "SmartShopper" */;
+			buildPhases = (
+				DA0B5089222358A00008C579 /* Sources */,
+				DA0B508A222358A00008C579 /* Frameworks */,
+				DA0B508B222358A00008C579 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartShopper;
+			productName = SmartShopper;
+			productReference = DA0B508D222358A00008C579 /* SmartShopper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA0B5085222358A00008C579 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = SmartShopperTeam;
+				TargetAttributes = {
+					DA0B508C222358A00008C579 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = DA0B5088222358A00008C579 /* Build configuration list for PBXProject "SmartShopper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA0B5084222358A00008C579;
+			productRefGroup = DA0B508E222358A00008C579 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA0B508C222358A00008C579 /* SmartShopper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA0B508B222358A00008C579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0B509D222358A40008C579 /* LaunchScreen.storyboard in Resources */,
+				DA0B509A222358A40008C579 /* Assets.xcassets in Resources */,
+				DA0B5098222358A00008C579 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA0B5089222358A00008C579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0B50AB22235B2E0008C579 /* AdminFeaturesViewController.swift in Sources */,
+				DA0B50A522235ACE0008C579 /* DepartmentLookupViewController.swift in Sources */,
+				DA0B5095222358A00008C579 /* SearchItemViewController.swift in Sources */,
+				DA0B50A922235B0D0008C579 /* AdminCreateAccountViewController.swift in Sources */,
+				DA0B50A722235AED0008C579 /* AdminLoginViewController.swift in Sources */,
+				DA0B5091222358A00008C579 /* AppDelegate.swift in Sources */,
+				DA0B5093222358A00008C579 /* WelcomeScreenViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA0B5096222358A00008C579 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA0B5097222358A00008C579 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA0B509B222358A40008C579 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA0B509C222358A40008C579 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA0B509F222358A40008C579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA0B50A0222358A40008C579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA0B50A2222358A40008C579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartShopper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartShopperTeam.SmartShopper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA0B50A3222358A40008C579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartShopper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartShopperTeam.SmartShopper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA0B5088222358A00008C579 /* Build configuration list for PBXProject "SmartShopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA0B509F222358A40008C579 /* Debug */,
+				DA0B50A0222358A40008C579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA0B50A1222358A40008C579 /* Build configuration list for PBXNativeTarget "SmartShopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA0B50A2222358A40008C579 /* Debug */,
+				DA0B50A3222358A40008C579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA0B5085222358A00008C579 /* Project object */;
+}

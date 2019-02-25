@@ -20,11 +20,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KEz-n5-IMT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dept. Lookup" id="Fnm-Ud-PKa"/>
+                    <tabBarItem key="tabBarItem" title="Dept. Lookup" image="second" id="Fnm-Ud-PKa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdd-Lt-XQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871" y="-331"/>
+            <point key="canvasLocation" x="869.60000000000002" y="-331.48425787106447"/>
         </scene>
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
@@ -34,29 +34,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="112.5" y="38" width="150.5" height="31.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="storeSchematic" translatesAutoresizingMaskIntoConstraints="NO" id="exk-C3-Oab">
+                                <rect key="frame" x="16" y="124" width="343" height="257"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150.5" id="XuV-Sr-Q5N"/>
+                                    <constraint firstAttribute="height" constant="257" id="3w0-iU-qpA"/>
+                                    <constraint firstAttribute="width" constant="343" id="q2m-Ft-P73"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mW0-Zx-GMJ">
+                                <rect key="frame" x="149.5" y="35" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="storeSchematic" translatesAutoresizingMaskIntoConstraints="NO" id="exk-C3-Oab">
-                                <rect key="frame" x="16" y="124" width="343" height="257"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.91908645929999999" green="0.92067795990000001" blue="0.20652192799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="exk-C3-Oab" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="BQs-8D-uxA"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="exk-C3-Oab" secondAttribute="bottom" constant="237" id="Ypv-qf-NA4"/>
-                            <constraint firstItem="exk-C3-Oab" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="343:667" id="aFg-ds-VGF"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" constant="280" id="exm-UA-ej4"/>
-                            <constraint firstItem="exk-C3-Oab" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="-81" id="qlf-Bd-PTC"/>
+                            <constraint firstItem="exk-C3-Oab" firstAttribute="top" secondItem="mW0-Zx-GMJ" secondAttribute="bottom" constant="68" id="6Jb-VS-p0z"/>
+                            <constraint firstItem="mW0-Zx-GMJ" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="15" id="8Kd-kw-Fzb"/>
+                            <constraint firstItem="exk-C3-Oab" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="chc-m1-zKp"/>
+                            <constraint firstItem="mW0-Zx-GMJ" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="ePz-J0-QR3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>

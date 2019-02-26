@@ -8,7 +8,27 @@
 
 import UIKit
 
-class DepartmentLookupViewController: UIViewController {
+class DepartmentLookupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITableViewDelegate, UITableViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return SampleData.sampleArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return SampleData.sampleArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "deptName")!
+        
+        cell.textLabel?.text = SampleData.sampleArray[indexPath.row]
+        
+        return cell
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

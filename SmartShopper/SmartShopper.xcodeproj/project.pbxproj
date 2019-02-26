@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A9FA1C2224B4A8007E6B7B /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9FA1B2224B4A8007E6B7B /* SampleData.swift */; };
 		DA0B5091222358A00008C579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5090222358A00008C579 /* AppDelegate.swift */; };
 		DA0B5093222358A00008C579 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5092222358A00008C579 /* WelcomeScreenViewController.swift */; };
 		DA0B5095222358A00008C579 /* SearchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5094222358A00008C579 /* SearchItemViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04A9FA1B2224B4A8007E6B7B /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		DA0B508D222358A00008C579 /* SmartShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0B5090222358A00008C579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA0B5092222358A00008C579 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				DA0B5099222358A40008C579 /* Assets.xcassets */,
 				DA0B509B222358A40008C579 /* LaunchScreen.storyboard */,
 				DA0B509E222358A40008C579 /* Info.plist */,
+				04A9FA1B2224B4A8007E6B7B /* SampleData.swift */,
 			);
 			path = SmartShopper;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				DA0B50A722235AED0008C579 /* AdminLoginViewController.swift in Sources */,
 				DA0B5091222358A00008C579 /* AppDelegate.swift in Sources */,
 				DA0B5093222358A00008C579 /* WelcomeScreenViewController.swift in Sources */,
+				04A9FA1C2224B4A8007E6B7B /* SampleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

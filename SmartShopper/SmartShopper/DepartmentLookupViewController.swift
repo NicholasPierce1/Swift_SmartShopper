@@ -9,23 +9,12 @@
 import UIKit
 
 class DepartmentLookupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITableViewDelegate, UITableViewDataSource {
-    
-    @IBOutlet weak var pickerView: UIPickerView!
-    
-    @IBOutlet weak var tableView: UITableView!
-    
-    var sampleArray = ["Object1","object2","object3"]
-    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return sampleArray.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return sampleArray[row]
+        return SampleData.sampleArray.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,14 +32,7 @@ class DepartmentLookupViewController: UIViewController, UIPickerViewDelegate, UI
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        pickerView.delegate = self
-        pickerView.dataSource = self
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        
+
         // Do any additional setup after loading the view.
     }
     

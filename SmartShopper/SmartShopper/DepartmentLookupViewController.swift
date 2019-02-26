@@ -9,12 +9,20 @@
 import UIKit
 
 class DepartmentLookupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITableViewDelegate, UITableViewDataSource {
+    
+
+    @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var tableView: UITableView!
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return SampleData.sampleArray.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return SampleData.sampleArray[row]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,7 +40,12 @@ class DepartmentLookupViewController: UIViewController, UIPickerViewDelegate, UI
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     

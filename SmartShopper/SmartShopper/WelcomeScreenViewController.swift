@@ -27,6 +27,11 @@ class WelcomeScreenViewController: UIViewController {
         view.layer.addSublayer(layer)
         
     }*/
+    
+    @IBAction func SearchAgain(_ sender: Any){
+        // before next line, proceed with other setup between both UIViewcontrollers
+        performSegue(withIdentifier: "searchAgain", sender: self)
+    }
 
 }
 

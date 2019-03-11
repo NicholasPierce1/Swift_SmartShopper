@@ -16,5 +16,12 @@ class SearchItemViewController: UIViewController {
     }
 
 
-}
 
+
+    // renders unwind segue path. Just method signature for now
+    @IBAction func unwind(with segue: UIStoryboardSegue){
+    
+        // clears label fields and turns off all labels in source UIViewController
+    }
+    
+}

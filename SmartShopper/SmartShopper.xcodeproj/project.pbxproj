@@ -14,7 +14,6 @@
 		DA0B5098222358A00008C579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0B5096222358A00008C579 /* Main.storyboard */; };
 		DA0B509A222358A40008C579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0B5099222358A40008C579 /* Assets.xcassets */; };
 		DA0B509D222358A40008C579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0B509B222358A40008C579 /* LaunchScreen.storyboard */; };
-		DA0B50A522235ACE0008C579 /* DepartmentLookupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50A422235ACE0008C579 /* DepartmentLookupViewController.swift */; };
 		DA0B50A722235AED0008C579 /* AdminLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50A622235AED0008C579 /* AdminLoginViewController.swift */; };
 		DA0B50A922235B0D0008C579 /* AdminCreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50A822235B0D0008C579 /* AdminCreateAccountViewController.swift */; };
 		DA0B50AB22235B2E0008C579 /* AdminFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50AA22235B2E0008C579 /* AdminFeaturesViewController.swift */; };
@@ -30,7 +29,6 @@
 		DA0B5099222358A40008C579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0B509C222358A40008C579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0B509E222358A40008C579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA0B50A422235ACE0008C579 /* DepartmentLookupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentLookupViewController.swift; sourceTree = "<group>"; };
 		DA0B50A622235AED0008C579 /* AdminLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginViewController.swift; sourceTree = "<group>"; };
 		DA0B50A822235B0D0008C579 /* AdminCreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCreateAccountViewController.swift; sourceTree = "<group>"; };
 		DA0B50AA22235B2E0008C579 /* AdminFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminFeaturesViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 				DA0B5092222358A00008C579 /* WelcomeScreenViewController.swift */,
 				DA0B5094222358A00008C579 /* SearchItemViewController.swift */,
 				DA0B5096222358A00008C579 /* Main.storyboard */,
-				DA0B50A422235ACE0008C579 /* DepartmentLookupViewController.swift */,
 				DA0B50A622235AED0008C579 /* AdminLoginViewController.swift */,
 				DA0B50A822235B0D0008C579 /* AdminCreateAccountViewController.swift */,
 				DA0B50AA22235B2E0008C579 /* AdminFeaturesViewController.swift */,
@@ -154,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA0B50AB22235B2E0008C579 /* AdminFeaturesViewController.swift in Sources */,
-				DA0B50A522235ACE0008C579 /* DepartmentLookupViewController.swift in Sources */,
 				DA0B5095222358A00008C579 /* SearchItemViewController.swift in Sources */,
 				DA0B50A922235B0D0008C579 /* AdminCreateAccountViewController.swift in Sources */,
 				DA0B50A722235AED0008C579 /* AdminLoginViewController.swift in Sources */,

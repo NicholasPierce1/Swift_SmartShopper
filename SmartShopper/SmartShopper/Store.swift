@@ -7,6 +7,7 @@
 //
 
 import Foundation
+// to finish: Admin struct
 
 // Model class retaining apposite data types and methods to extend necessary functionality for the UIViewControllers
 
@@ -182,9 +183,49 @@ internal struct Department: CustomStringConvertible, Equatable, Hashable{
     }
 }
 
+// struct to retain state of Admin and their corresponding store
+private struct Admin {
+    
+    // private Array containing all storePasswords
+    private static let storeNumAndPassword: [Int : Int] = [404: 404, 123: 123, 987: 987] // initial data for demonstration
+    // NOTE: storePassword is unique to store, so it is also an identifier for store
+    
+    // private static hashmap holding the [ storePassword: Admin]
+    private static var adminLogin: [Int: Admin]! //=[ 404 : _ ]
+    // initial data for demonstration
+    
+    // enumerates attributes for admin
+    
+    // username
+    private let _userName: String  // userName does not change
+    fileprivate var userName: String {  // read only
+        return _userName
+    }
+    
+    // adminPassword
+    private var _adminPassword: String
+    fileprivate var adminPassword: String {  // read only
+        return _adminPassword
+    }
+    
+    // private initializer
+    private init(userName: String, adminPassword: String){
+        self._userName = userName
+        self._adminPassword = adminPassword
+    }
+    
+    // checks if storePassword is suffice, username is unique for store, and then appends admin to that store.  Error code otherwise
+    fileprivate static func addAdmin(userName: String, withPassword password: String, forStore store: Int, validateWith storePassword: Int) -> ReturnCode {
+        
+        // checks if storePassword is correct/ points to a valid store and password to it is suffice
+        if storeNumAndPassword[store] == nil {
+            return .validItem
+        }
+        return .validItem
+    }
+}
 
 // struct that coalesces the attributes and functionality of both classes, and is the external type, for ViewControllers to reference
-
 internal struct Store{
     
     // shared static instance used by ViewControllers
@@ -251,14 +292,14 @@ internal struct Store{
         return .itemFromVendorIsUnique
     }
     
+    // returns an array of all the multiAisle Departments
+    private func returnMultiAisleDepartments() -> [Department] {
+        return Department.returnMultivalueDepartments()
+    }
+    
     // returns an array of all the Departments
     internal func returnDepartments() -> [Department] {
         return Array<Department>(Store.shared.store.keys)
-    }
-    
-    // returns an array of all the multiAisle Departments
-    internal func returnMultiAisleDepartments() -> [Department] {
-        return Department.returnMultivalueDepartments()
     }
     
     // returns Department name

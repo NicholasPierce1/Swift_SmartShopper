@@ -330,7 +330,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eko-4A-8c7">
-                                <rect key="frame" x="163.5" y="606" width="48" height="30"/>
+                                <rect key="frame" x="163.5" y="557" width="48" height="30"/>
                                 <state key="normal" title="Search">
                                     <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -689,6 +689,9 @@
                                 <rect key="frame" x="37" y="404" width="76" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <segue destination="Vig-4t-pI6" kind="show" id="hB3-5H-z1y"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Admin!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owp-tZ-56z">
                                 <rect key="frame" x="120" y="75" width="134" height="21"/>
@@ -761,7 +764,6 @@
                     <navigationItem key="navigationItem" id="z0s-Kv-Kph"/>
                     <connections>
                         <segue destination="iYE-46-cKN" kind="presentation" identifier="login" id="OBj-2m-iaa"/>
-                        <segue destination="Vig-4t-pI6" kind="presentation" identifier="adminFeatures" id="cYL-bf-nzg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STi-g2-CEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -787,7 +789,7 @@
             </objects>
             <point key="canvasLocation" x="-1063" y="28"/>
         </scene>
-        <!--Admin Features View Controller-->
+        <!--Item-->
         <scene sceneID="gY9-S1-Twe">
             <objects>
                 <viewController id="Vig-4t-pI6" customClass="AdminFeaturesViewController" customModule="SmartShopper" customModuleProvider="target" sceneMemberID="viewController">
@@ -970,22 +972,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TP9-Rg-VFj"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="R48-b0-DGW"/>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="presentation" identifier="adminLogout" id="lI1-JS-0cw"/>
+                        <outlet property="departmentList" destination="lf1-Uc-2xp" id="Id7-cH-OMM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p57-hg-ZfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="789"/>
+            <point key="canvasLocation" x="1544.8" y="788.45577211394311"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Home" width="22.5" height="22.5"/>
-        <image name="Login" width="22.5" height="22.5"/>
-        <image name="Search" width="22.5" height="22.5"/>
-        <image name="storeSchematic" width="289" height="240.94488525390625"/>
+        <image name="Home" width="30" height="30"/>
+        <image name="Login" width="30" height="30"/>
+        <image name="Search" width="30" height="30"/>
+        <image name="storeSchematic" width="602" height="425"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lI1-JS-0cw"/>
+        <segue reference="u7Y-xg-7CH"/>
     </inferredMetricsTieBreakers>
 </document>

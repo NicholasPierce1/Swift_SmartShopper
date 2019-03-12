@@ -8,28 +8,13 @@
 
 import UIKit
 
-class SearchItemViewController: UIViewController {
-
-    @IBOutlet weak var departmentList: UITextField!
+class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        depList()
+        
     }
     
-    
-    func depList() {
-        let activity_list = UIPickerView()
-        activity_list.delegate = self
-        departmentList.inputView = activity_list
-    }
-    
-    
-    
-}
-
-
-extension SearchItemViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
         
@@ -37,12 +22,13 @@ extension SearchItemViewController: UIPickerViewDelegate, UIPickerViewDataSource
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return Store.shared.returnDepartments().count
     }
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return Store.shared.returnDepartmentName(for: Store.shared.returnDepartments()[row])
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        departmentList.text = Store.shared.returnDepartmentName(for: Store.shared.returnDepartments()[row])
+         //Store.shared.returnDepartmentName(for: Store.shared.returnDepartments()[row])
     }
     
 }

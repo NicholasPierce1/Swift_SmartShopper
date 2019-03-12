@@ -983,10 +983,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Home" width="30" height="30"/>
-        <image name="Login" width="30" height="30"/>
-        <image name="Search" width="30" height="30"/>
-        <image name="storeSchematic" width="602" height="425"/>
+        <image name="Home" width="22.5" height="22.5"/>
+        <image name="Login" width="22.5" height="22.5"/>
+        <image name="Search" width="22.5" height="22.5"/>
+        <image name="storeSchematic" width="289" height="240.94488525390625"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="u7Y-xg-7CH"/>

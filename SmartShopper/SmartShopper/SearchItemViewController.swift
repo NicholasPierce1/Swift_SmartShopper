@@ -13,6 +13,8 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // appends an observer
+        NotificationCenter.default.addObserver(self, selector: #selector(checkResults), name: Notification.Name.searchComplete, object: nil)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -31,4 +33,25 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
          //Store.shared.returnDepartmentName(for: Store.shared.returnDepartments()[row])
     }
     
+    @IBAction func search(_ sender: Any?) {
+        // call Store.shared.search(passStuffHere)
+    }
+    
+    // observer method that's triggered
+    @objc func checkResults(_ notifcation: Notification) {
+        
+        // force unwrap of hashMap in userInfo
+        let passedInfo = notifcation.userInfo as! [String: [Int]]  // array will contain either [1,2,...] or it will be []
+        
+        if passedInfo["results"]!.count != 0 {
+            // call segue with performSegue(withIdentifier: UIStoryBoardSegue, sender: Any?) {} and pass WelcomeScreenVC w/ array
+
+        }
+        // empty array--- bad search
+        
+    }
+    
+    override func performSegue(withIdentifier identifier: String, sender: Any?) {
+        // if called, then pass WelcomeVC the array
+    }
 }

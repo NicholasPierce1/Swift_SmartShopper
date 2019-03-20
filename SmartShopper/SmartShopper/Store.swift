@@ -7,7 +7,52 @@
 //
 
 import Foundation
-// to finish: Admin struct
+
+// renders Notifications
+internal extension Notification.Name{
+    
+    // enumerates static vars for post
+    static var searchComplete: Notification.Name {
+        return Notification.Name.init(rawValue: "search for user query done")
+    }
+}
+
+
+// extension of String to append functionality to indicate whether a substring (regardless of case) is contained in another (regardless of case)
+fileprivate extension String{
+    
+    func contains(substring: String) -> Bool{
+        
+        // error check to corroborate substring isn't empty
+        if substring.count == 0{
+            return false
+        }
+        
+        // var to retain the current char to check
+        var substringIndex: Int = 0
+        
+        // users can enter a capitalized or non-capitalized input.  Lowercase both strings to compare
+        // a for loop to iterate over all the the characters
+        for char in self.localizedLowercase{
+            
+            // checks for comparison, regardless of what substringIndex is
+            if substring.localizedLowercase[substring.index(substring.startIndex, offsetBy: substringIndex)] == char {
+                
+                // increments substring and determines if that char is last comprised in substring
+                substringIndex += 1
+                if substringIndex == substring.count {  // last values has been check ex: "hello" -- (4+1) == 5
+                    return true
+                }
+            }
+            else {  // values don't match reset substringIndex
+                substringIndex = 0
+            }
+        }
+        
+        // exited for loop without returning true.  No matches occur, return false
+        return false
+    }
+}
 
 // Model class retaining apposite data types and methods to extend necessary functionality for the UIViewControllers
 
@@ -25,6 +70,10 @@ internal enum ReturnCode{  // internal due to cases being accessed/evaluated by 
     case itemNotInStore
     case itemAisleNumChanged
     case itemRemoved
+    case storeNumInvalid
+    case storePasswordInvalid
+    case adminAdded
+    case adminAlreadyExist
 }
 
 // Struct to hold individual items
@@ -178,21 +227,25 @@ internal struct Department: CustomStringConvertible, Equatable, Hashable{
     }
     
     // has automatic conformance to Hashable consequently of all type memebers being hashable.  Altering to where the Hasher of two Departments are the same if they are equal (hold same name)
-    func hash(into hasher: inout Hasher){
+    internal func hash(into hasher: inout Hasher){
         hasher.combine(self.name)  // feeds instance name (String) into Hasher to compute hashvalue & placement in dictionary
     }
 }
 
 // struct to retain state of Admin and their corresponding store
-private struct Admin {
+private struct Admin: Equatable, Hashable {
     
     // private Array containing all storePasswords
     private static let storeNumAndPassword: [Int : Int] = [404: 404, 123: 123, 987: 987] // initial data for demonstration
-    // NOTE: storePassword is unique to store, so it is also an identifier for store
+    // NOTE: storeNum is unique to store, so it is also an identifier for store
     
-    // private static hashmap holding the [ storePassword: Admin]
-    private static var adminLogin: [Int: Admin]! //=[ 404 : _ ]
-    // initial data for demonstration
+    // private static set holding the Admin
+    private static var _adminLogin: Set<Admin>!
+    private static var adminLogin: Set<Admin>{ // read only
+        get {  // checks for nil
+            return _adminLogin != nil ? _adminLogin : Set<Admin>()
+        }
+    }
     
     // enumerates attributes for admin
     
@@ -208,20 +261,63 @@ private struct Admin {
         return _adminPassword
     }
     
+    // store number corresponding to admin
+    private var _storeNumForAdmin: Int
+    fileprivate var storeNumForAdmin: Int{ // read only
+        return _storeNumForAdmin
+    }
+    
     // private initializer
-    private init(userName: String, adminPassword: String){
+    private init(userName: String, adminPassword: String, storeNumForAdmin: Int){
         self._userName = userName
         self._adminPassword = adminPassword
+        self._storeNumForAdmin = storeNumForAdmin
     }
     
     // checks if storePassword is suffice, username is unique for store, and then appends admin to that store.  Error code otherwise
     fileprivate static func addAdmin(userName: String, withPassword password: String, forStore store: Int, validateWith storePassword: Int) -> ReturnCode {
         
         // checks if storePassword is correct/ points to a valid store and password to it is suffice
-        if storeNumAndPassword[store] == nil {
-            return .validItem
+        if storeNumAndPassword[store] != nil {  // store returned- check password
+            if storeNumAndPassword[store]! != storePassword {
+                return .storePasswordInvalid
+            }
         }
-        return .validItem
+        else {  // no store returned on lookup
+            return .storeNumInvalid
+        }
+        
+        // renders Admin object ( Note: not appending, but used to facilitate pending checks )
+        let tempAdmin = Admin(userName: userName, adminPassword: password, storeNumForAdmin: store)
+        
+        // checks if Admin is unique to Set, append if so, return error otherwise
+        return adminLogin.contains(tempAdmin) ? .adminAdded : .adminAlreadyExist
+
+    }
+    
+    // invoked to login an admin: validates adminPassword to userName and storePassword to storeNum
+    fileprivate static func login( forAdmin username: String, withAdminPassword adminPassword: String, toStore storePassword: Int) -> Bool {
+        
+        // validates that admin exist and is not unique (erroneous username, pw, or storeNum)
+        if !Admin.adminLogin.contains(Admin.init(userName: username, adminPassword: adminPassword, storeNumForAdmin: storePassword)) {
+            // admin not found
+            return false
+        }
+        
+        // checks if password for store corresponds to a preexisting store
+        return storeNumAndPassword.values.contains(storePassword)
+    }
+    
+    // determines equavlience for two admin
+    fileprivate static func ==( lhs: Admin , rhs: Admin) -> Bool {
+        return lhs.userName == rhs.userName && lhs.adminPassword == rhs.adminPassword && lhs.storeNumForAdmin == rhs.storeNumForAdmin
+    }
+    
+    // feeds integral components (that applied in equatable) into hash feeder
+    fileprivate func hash(into hasher: inout Hasher){
+        hasher.combine(self.userName)
+        hasher.combine(self.adminPassword)
+        hasher.combine(self.storeNumForAdmin)
     }
 }
 
@@ -246,9 +342,9 @@ internal struct Store{
     
     // private initializer for Store
     private init(){}
-    
+
     // viewController calls to validate passed information from user is valid to append to the Store's department-item data structure.  Append if it is, return error code else
-    internal func validateEntryAppend(nameOfItem itemName: String, simplifiedSearchPhrase categoryName: String, vendor: String, barcode: String, aisleOfItem aisleNum: Int!, toThisDepartment dept: Department) -> ReturnCode {
+    internal func addItem(nameOfItem itemName: String, simplifiedSearchPhrase categoryName: String, vendor: String, barcode: String, toThisDepartment dept: Department, aisleOfItem aisleNum: Int! = nil) -> ReturnCode {
         
         // renders Item (not done validating but encapsulating into an Item here facilitates tandem step
         let item: Item = Item.createItem(name: itemName, categoryName: categoryName, vendor: vendor, barcode: barcode, aisleNum: dept.name == "Seasonal" ? 1 : aisleNum)
@@ -269,7 +365,7 @@ internal struct Store{
         else {
         // appends item to Department and returns that item has been appended
         Store.shared.store[dept]![item.barcode] = item
-        return .itemAdded
+            return .itemAdded
         }
     }
     
@@ -351,9 +447,54 @@ internal struct Store{
             return .itemRemoved
         }
     }
+    // (inside da method) if all the textfields have stuff in them (.isEmpty == false) then invoke whatever model method
+    // compiles are returns a list retaining to the locations of all the Item's queried.  If more than 3 locations are appended- or no results are garnered- then returns nil
+    internal func search(findLocationOf searchName: String, in dept: Department) {
+        
+        // calls thread here
+        DispatchQueue.global(qos: .userInitiated).async {
+            
+            // stores results of any matches (aisle location)
+            var arrayResult: [Int]!
+            
+            // call on custom contain for each item in the department and popullate array
+            for item: Item in Store.shared.store[dept]!.values {
+                
+                // checks if search query is contained in categoryName || itemName
+                if item.categoryName.contains(substring: searchName) || item.name.contains(substring: searchName) {
+                    
+                    // append item's ailse num if unique
+                    if !arrayResult.contains(item.aisleNum) { // append
+                        arrayResult.append(item.aisleNum)
+                    }
+                }
+            }
+            
+            // evaluates how many items are comprised in query (if over 3 or nil return [])
+            if arrayResult != nil {
+                
+                if arrayResult!.count <= 2 {  // less than two item locations -- good query
+                    NotificationCenter.default.post(name: Notification.Name.searchComplete, object: Store.shared, userInfo: ["results" : arrayResult])
+                    return
+                }
+            }
+            
+            // post notification with defualt value
+            NotificationCenter.default.post(name: Notification.Name.searchComplete, object: Store.shared, userInfo: ["results" : []])
+        }
+    }
+    
+    // informs search
+    /* compiles listing
+    private static func compileListing(forSearchName search: String, in dept: Department) -> [Int]? {
+        
+        // temporary constant to hold results obtained by thread
+        var results: [Int]
+        queue.async {
+            results = [1,2]
+            return results
+        }
+        // iterates through each element for the granted department
+        return nil
+    }*/
 }
-
-/* toDo:
- - append Admin struct for admin login and commensurative functionality to Store
- - append search features to Store for VC to reference ( search tab )
- */

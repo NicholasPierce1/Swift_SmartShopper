@@ -10,6 +10,9 @@ import UIKit
 
 class WelcomeScreenViewController: UIViewController {
     
+    // retains reference to SearchItemViewController's array from result
+    var resultArray: [Int]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

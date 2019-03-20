@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3557B35CEFB4CED047DAABB7 /* Pods_SmartShopper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284D1607DAB94F485E27B9BA /* Pods_SmartShopper.framework */; };
 		DA0B5091222358A00008C579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5090222358A00008C579 /* AppDelegate.swift */; };
 		DA0B5093222358A00008C579 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5092222358A00008C579 /* WelcomeScreenViewController.swift */; };
 		DA0B5095222358A00008C579 /* SearchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5094222358A00008C579 /* SearchItemViewController.swift */; };
@@ -16,10 +17,23 @@
 		DA0B50A722235AED0008C579 /* AdminLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50A622235AED0008C579 /* AdminLoginViewController.swift */; };
 		DA0B50A922235B0D0008C579 /* AdminCreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50A822235B0D0008C579 /* AdminCreateAccountViewController.swift */; };
 		DA0B50AB22235B2E0008C579 /* AdminFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50AA22235B2E0008C579 /* AdminFeaturesViewController.swift */; };
+		DA11D5C022428E8E00F1FC3C /* SmartShopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11D5BF22428E8E00F1FC3C /* SmartShopperTests.swift */; };
 		DA6944B722360651004EB7A4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6944B622360651004EB7A4 /* Store.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DA11D5C222428E8E00F1FC3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA0B5085222358A00008C579 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA0B508C222358A00008C579;
+			remoteInfo = SmartShopper;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		284D1607DAB94F485E27B9BA /* Pods_SmartShopper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartShopper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA12F3A2F58552C79488D85A /* Pods-SmartShopper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShopper.release.xcconfig"; path = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper.release.xcconfig"; sourceTree = "<group>"; };
 		DA0B508D222358A00008C579 /* SmartShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0B5090222358A00008C579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA0B5092222358A00008C579 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -31,11 +45,23 @@
 		DA0B50A622235AED0008C579 /* AdminLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginViewController.swift; sourceTree = "<group>"; };
 		DA0B50A822235B0D0008C579 /* AdminCreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCreateAccountViewController.swift; sourceTree = "<group>"; };
 		DA0B50AA22235B2E0008C579 /* AdminFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminFeaturesViewController.swift; sourceTree = "<group>"; };
+		DA11D5BD22428E8E00F1FC3C /* SmartShopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartShopperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA11D5BF22428E8E00F1FC3C /* SmartShopperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartShopperTests.swift; sourceTree = "<group>"; };
+		DA11D5C122428E8E00F1FC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6944B622360651004EB7A4 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		E92882EC0213C12BF743B163 /* Pods-SmartShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShopper.debug.xcconfig"; path = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DA0B508A222358A00008C579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3557B35CEFB4CED047DAABB7 /* Pods_SmartShopper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA11D5BA22428E8E00F1FC3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,11 +71,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DB51C6EAF83B895D70E7133 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E92882EC0213C12BF743B163 /* Pods-SmartShopper.debug.xcconfig */,
+				CA12F3A2F58552C79488D85A /* Pods-SmartShopper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DA0B5084222358A00008C579 = {
 			isa = PBXGroup;
 			children = (
 				DA0B508F222358A00008C579 /* SmartShopper */,
+				DA11D5BE22428E8E00F1FC3C /* SmartShopperTests */,
 				DA0B508E222358A00008C579 /* Products */,
+				3DB51C6EAF83B895D70E7133 /* Pods */,
+				FD6A00FE127E40144ED4FBB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				DA0B508D222358A00008C579 /* SmartShopper.app */,
+				DA11D5BD22428E8E00F1FC3C /* SmartShopperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +118,23 @@
 			path = SmartShopper;
 			sourceTree = "<group>";
 		};
+		DA11D5BE22428E8E00F1FC3C /* SmartShopperTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA11D5BF22428E8E00F1FC3C /* SmartShopperTests.swift */,
+				DA11D5C122428E8E00F1FC3C /* Info.plist */,
+			);
+			path = SmartShopperTests;
+			sourceTree = "<group>";
+		};
+		FD6A00FE127E40144ED4FBB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				284D1607DAB94F485E27B9BA /* Pods_SmartShopper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA0B50A1222358A40008C579 /* Build configuration list for PBXNativeTarget "SmartShopper" */;
 			buildPhases = (
+				6B9ACDFF401F5B63FE12CB13 /* [CP] Check Pods Manifest.lock */,
 				DA0B5089222358A00008C579 /* Sources */,
 				DA0B508A222358A00008C579 /* Frameworks */,
 				DA0B508B222358A00008C579 /* Resources */,
@@ -99,6 +156,24 @@
 			productReference = DA0B508D222358A00008C579 /* SmartShopper.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DA11D5BC22428E8E00F1FC3C /* SmartShopperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA11D5C622428E8E00F1FC3C /* Build configuration list for PBXNativeTarget "SmartShopperTests" */;
+			buildPhases = (
+				DA11D5B922428E8E00F1FC3C /* Sources */,
+				DA11D5BA22428E8E00F1FC3C /* Frameworks */,
+				DA11D5BB22428E8E00F1FC3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA11D5C322428E8E00F1FC3C /* PBXTargetDependency */,
+			);
+			name = SmartShopperTests;
+			productName = SmartShopperTests;
+			productReference = DA11D5BD22428E8E00F1FC3C /* SmartShopperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -111,6 +186,10 @@
 				TargetAttributes = {
 					DA0B508C222358A00008C579 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					DA11D5BC22428E8E00F1FC3C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DA0B508C222358A00008C579;
 					};
 				};
 			};
@@ -128,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				DA0B508C222358A00008C579 /* SmartShopper */,
+				DA11D5BC22428E8E00F1FC3C /* SmartShopperTests */,
 			);
 		};
 /* End PBXProject section */
@@ -143,7 +223,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA11D5BB22428E8E00F1FC3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B9ACDFF401F5B63FE12CB13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartShopper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA0B5089222358A00008C579 /* Sources */ = {
@@ -160,7 +272,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA11D5B922428E8E00F1FC3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA11D5C022428E8E00F1FC3C /* SmartShopperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA11D5C322428E8E00F1FC3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA0B508C222358A00008C579 /* SmartShopper */;
+			targetProxy = DA11D5C222428E8E00F1FC3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA0B5096222358A00008C579 /* Main.storyboard */ = {
@@ -300,16 +428,19 @@
 		};
 		DA0B50A2222358A40008C579 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92882EC0213C12BF743B163 /* Pods-SmartShopper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SmartShopper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SmartShopperTeam.SmartShopper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,18 +448,59 @@
 		};
 		DA0B50A3222358A40008C579 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA12F3A2F58552C79488D85A /* Pods-SmartShopper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SmartShopper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SmartShopperTeam.SmartShopper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA11D5C422428E8E00F1FC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartShopperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartShopperTeam.SmartShopperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartShopper.app/SmartShopper";
+			};
+			name = Debug;
+		};
+		DA11D5C522428E8E00F1FC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartShopperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartShopperTeam.SmartShopperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartShopper.app/SmartShopper";
 			};
 			name = Release;
 		};
@@ -349,6 +521,15 @@
 			buildConfigurations = (
 				DA0B50A2222358A40008C579 /* Debug */,
 				DA0B50A3222358A40008C579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA11D5C622428E8E00F1FC3C /* Build configuration list for PBXNativeTarget "SmartShopperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA11D5C422428E8E00F1FC3C /* Debug */,
+				DA11D5C522428E8E00F1FC3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

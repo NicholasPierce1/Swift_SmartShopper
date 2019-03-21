@@ -4,7 +4,8 @@
 //
 //  Created by Nick Pierce on 3/10/19.
 //  Copyright © 2019 SmartShopperTeam. All rights reserved.
-//
+
+//  TODO: append Store methods to invoke admin validation (login and create user)
 
 import Foundation
 
@@ -236,7 +237,7 @@ internal struct Department: CustomStringConvertible, Equatable, Hashable{
 private struct Admin: Equatable, Hashable {
     
     // private Array containing all storePasswords
-    private static let storeNumAndPassword: [Int : Int] = [404: 404, 123: 123, 987: 987] // initial data for demonstration
+    private static let storePasswordAndNum: [Int : Int] = [404: 404, 123: 123, 987: 987] // initial data for demonstration
     // NOTE: storeNum is unique to store, so it is also an identifier for store
     
     // private static set holding the Admin
@@ -278,34 +279,44 @@ private struct Admin: Equatable, Hashable {
     fileprivate static func addAdmin(userName: String, withPassword password: String, forStore store: Int, validateWith storePassword: Int) -> ReturnCode {
         
         // checks if storePassword is correct/ points to a valid store and password to it is suffice
-        if storeNumAndPassword[store] != nil {  // store returned- check password
-            if storeNumAndPassword[store]! != storePassword {
-                return .storePasswordInvalid
+        if storePasswordAndNum[storePassword] != nil {  // store returned- check password
+            if storePasswordAndNum[storePassword]! != store {
+                return .storeNumInvalid
             }
         }
         else {  // no store returned on lookup
-            return .storeNumInvalid
+            return .storePasswordInvalid
         }
         
         // renders Admin object ( Note: not appending, but used to facilitate pending checks )
         let tempAdmin = Admin(userName: userName, adminPassword: password, storeNumForAdmin: store)
         
-        // checks if Admin is unique to Set, append if so, return error otherwise
-        return adminLogin.contains(tempAdmin) ? .adminAdded : .adminAlreadyExist
-
+        // checks if admin is unique, add if so
+        if adminLogin.contains(tempAdmin) { // admin already exist
+            return .adminAlreadyExist
+        }
+        
+        // appends
+        _adminLogin.update(with: tempAdmin)
+        return .adminAdded
     }
     
     // invoked to login an admin: validates adminPassword to userName and storePassword to storeNum
-    fileprivate static func login( forAdmin username: String, withAdminPassword adminPassword: String, toStore storePassword: Int) -> Bool {
+    fileprivate static func login( forAdmin username: String, withAdminPassword adminPassword: String, storePassword: Int) -> Bool {
+        
+        // corroborates the entered store password matches to some store
+        if !(storePasswordAndNum[storePassword] != nil) { // does not match any password for any store
+            return false
+        }
         
         // validates that admin exist and is not unique (erroneous username, pw, or storeNum)
-        if !Admin.adminLogin.contains(Admin.init(userName: username, adminPassword: adminPassword, storeNumForAdmin: storePassword)) {
+        if !Admin.adminLogin.contains(Admin.init(userName: username, adminPassword: adminPassword, storeNumForAdmin: Admin.storePasswordAndNum[storePassword]! )) {
             // admin not found
             return false
         }
         
-        // checks if password for store corresponds to a preexisting store
-        return storeNumAndPassword.values.contains(storePassword)
+        // password is tailored to a store AND that admin exist to that corresponding store
+        return true
     }
     
     // determines equavlience for two admin
@@ -447,7 +458,7 @@ internal struct Store{
             return .itemRemoved
         }
     }
-    // (inside da method) if all the textfields have stuff in them (.isEmpty == false) then invoke whatever model method
+
     // compiles are returns a list retaining to the locations of all the Item's queried.  If more than 3 locations are appended- or no results are garnered- then returns nil
     internal func search(findLocationOf searchName: String, in dept: Department) {
         
@@ -483,18 +494,16 @@ internal struct Store{
             NotificationCenter.default.post(name: Notification.Name.searchComplete, object: Store.shared, userInfo: ["results" : []])
         }
     }
-    
-    // informs search
-    /* compiles listing
-    private static func compileListing(forSearchName search: String, in dept: Department) -> [Int]? {
+
+    // determines if an admin can login
+    internal func login(username: String, adminPassword: String, storePassword: Int) -> Bool {
         
-        // temporary constant to hold results obtained by thread
-        var results: [Int]
-        queue.async {
-            results = [1,2]
-            return results
-        }
-        // iterates through each element for the granted department
-        return nil
-    }*/
+        // invokes Admin login function (forwards result)
+        return Admin.login(forAdmin: username, withAdminPassword: adminPassword, storePassword: storePassword)
+    }
+    
+    // assesses if admin can login, permits if so, and forwards commensurate return code
+    internal func addAdmin(withUsername username: String, adminPassword: String, forStore store: Int, storePassword password: Int) -> ReturnCode{
+        return Admin.addAdmin(userName: username, withPassword: adminPassword, forStore: store, validateWith: password)
+    }
 }

@@ -54,4 +54,16 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
     override func performSegue(withIdentifier identifier: String, sender: Any?) {
         // if called, then pass WelcomeVC the array
     }
+    
+    
+        @IBAction func doSomething(_ sender: Any?){
+            DispatchQueue.global(qos: .userInitiated).async{
+                // did stuff-- got new content
+                DispatchQueue.main.async {
+                    // updated labels accordingly
+                    // yields a DEADLOCK context switch
+                }
+            }
+            // do other stuff with labels
+        }
 }

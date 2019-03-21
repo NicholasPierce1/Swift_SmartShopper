@@ -16,7 +16,13 @@ class AdminLoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "login" {
+            return  true// Store.shared.
+        }
+        
+        return false
+    }
     /*
     // MARK: - Navigation
 

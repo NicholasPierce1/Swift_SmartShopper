@@ -705,9 +705,6 @@
                                 <rect key="frame" x="37" y="404" width="76" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Sign Up"/>
-                                <connections>
-                                    <segue destination="Vig-4t-pI6" kind="show" id="hB3-5H-z1y"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Admin!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owp-tZ-56z">
                                 <rect key="frame" x="120" y="75" width="134" height="21"/>
@@ -753,6 +750,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1VN-rT-42F">
+                                <rect key="frame" x="178" y="269" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="StorePassword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc1-Uc-aFZ">
+                                <rect key="frame" x="18" y="274" width="115" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -779,7 +790,8 @@
                     <tabBarItem key="tabBarItem" title="Login" image="Login" landscapeImage="Login" selectedImage="Login" id="ndE-Gb-pmo"/>
                     <navigationItem key="navigationItem" id="z0s-Kv-Kph"/>
                     <connections>
-                        <segue destination="iYE-46-cKN" kind="presentation" identifier="login" id="OBj-2m-iaa"/>
+                        <segue destination="iYE-46-cKN" kind="presentation" identifier="createAdmin" id="OBj-2m-iaa"/>
+                        <segue destination="Vig-4t-pI6" kind="presentation" identifier="login" id="Y6T-zD-WTh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STi-g2-CEx" userLabel="First Responder" sceneMemberID="firstResponder"/>

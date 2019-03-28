@@ -46,15 +46,19 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
         let passedInfo = notifcation.userInfo as! [String: [Int]]  // array will contain either [1,2,...] or it will be []
         
         if passedInfo["results"]!.count != 0 {
-            // call segue with performSegue(withIdentifier: UIStoryBoardSegue, sender: Any?) {} and pass WelcomeScreenVC w/ array
+            // call segue with performSegue(withIdentifier: UIStoryBoardSegue, sender: Any?) {}
+            // pass array and department NAME to WelcomeViewController
+            
 
         }
         // empty array--- bad search
+        // raise alertcontroller to display error
         
     }
     
     override func performSegue(withIdentifier identifier: String, sender: Any?) {
-        // if called, then pass WelcomeVC the array
+        // if called, then pass WelcomeVC the array and selectedDepartment name
+        // ALSO: denote the searchButton invisible
     }
     
     

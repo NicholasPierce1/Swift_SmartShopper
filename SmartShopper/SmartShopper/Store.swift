@@ -108,7 +108,7 @@ fileprivate struct Item: Equatable{
     
     // mutable value that denotes which asile the item can be found in
     private var _aisleNum: Int
-    fileprivate var aisleNum: Int { // read and settable
+    internal var aisleNum: Int { // read and settable
         get{
             return _aisleNum
         }
@@ -213,7 +213,7 @@ internal struct Department: CustomStringConvertible, Equatable, Hashable{
     }
     
     //  determines if the ailseNum is in range for a given department
-    private static func inRange(aisle: Int, forDepartment dept: Department) -> Bool {
+    internal static func inRange(aisle: Int, forDepartment dept: Department) -> Bool {
         return aisle >= dept.minAisleNum && aisle <= dept.maxAisleNum
     }
     
@@ -321,14 +321,13 @@ private struct Admin: Equatable, Hashable {
     
     // determines equavlience for two admin
     fileprivate static func ==( lhs: Admin , rhs: Admin) -> Bool {
-        return lhs.userName == rhs.userName && lhs.adminPassword == rhs.adminPassword && lhs.storeNumForAdmin == rhs.storeNumForAdmin
+        return lhs.userName == rhs.userName || lhs.adminPassword == rhs.adminPassword 
     }
     
     // feeds integral components (that applied in equatable) into hash feeder
     fileprivate func hash(into hasher: inout Hasher){
         hasher.combine(self.userName)
         hasher.combine(self.adminPassword)
-        hasher.combine(self.storeNumForAdmin)
     }
 }
 
@@ -462,11 +461,11 @@ internal struct Store{
     // compiles are returns a list retaining to the locations of all the Item's queried.  If more than 3 locations are appended- or no results are garnered- then returns nil
     internal func search(findLocationOf searchName: String, in dept: Department) {
         
-        // calls thread here
+        // invokes thread to return query search
         DispatchQueue.global(qos: .userInitiated).async {
             
             // stores results of any matches (aisle location)
-            var arrayResult: [Int]!
+            var arrayResult: [Int] = []
             
             // call on custom contain for each item in the department and popullate array
             for item: Item in Store.shared.store[dept]!.values {
@@ -482,12 +481,13 @@ internal struct Store{
             }
             
             // evaluates how many items are comprised in query (if over 3 or nil return [])
-            if arrayResult != nil {
+            if arrayResult.count != 0 {
                 
-                if arrayResult!.count <= 2 {  // less than two item locations -- good query
+                if arrayResult.count <= 2 {  // less than two item locations -- good query
                     NotificationCenter.default.post(name: Notification.Name.searchComplete, object: Store.shared, userInfo: ["results" : arrayResult])
                     return
                 }
+                
             }
             
             // post notification with defualt value

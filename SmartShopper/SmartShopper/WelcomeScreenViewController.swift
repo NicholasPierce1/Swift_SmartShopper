@@ -33,7 +33,11 @@ class WelcomeScreenViewController: UIViewController {
     
     @IBAction func SearchAgain(_ sender: Any){
         // before next line, proceed with other setup between both UIViewcontrollers
-        performSegue(withIdentifier: "searchAgain", sender: self)
+        self.dismiss(animated: true){
+            
+            // dismiss handler- render button invisible and have all labels appear
+            
+        }
     }
 
 }

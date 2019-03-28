@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3557B35CEFB4CED047DAABB7 /* Pods_SmartShopper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284D1607DAB94F485E27B9BA /* Pods_SmartShopper.framework */; };
+		3D2063F0B35964ADB9B8B720 /* Pods_SmartShopperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4E9758AAAC030631AF423A /* Pods_SmartShopperTests.framework */; };
 		DA0B5091222358A00008C579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5090222358A00008C579 /* AppDelegate.swift */; };
 		DA0B5093222358A00008C579 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5092222358A00008C579 /* WelcomeScreenViewController.swift */; };
 		DA0B5095222358A00008C579 /* SearchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5094222358A00008C579 /* SearchItemViewController.swift */; };
@@ -33,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		284D1607DAB94F485E27B9BA /* Pods_SmartShopper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartShopper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F36A939FDCFC411DFF3374 /* Pods-SmartShopperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShopperTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartShopperTests/Pods-SmartShopperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		700B7EB2E4B9089EF73280DB /* Pods-SmartShopperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShopperTests.release.xcconfig"; path = "Target Support Files/Pods-SmartShopperTests/Pods-SmartShopperTests.release.xcconfig"; sourceTree = "<group>"; };
+		7B4E9758AAAC030631AF423A /* Pods_SmartShopperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartShopperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA12F3A2F58552C79488D85A /* Pods-SmartShopper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShopper.release.xcconfig"; path = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper.release.xcconfig"; sourceTree = "<group>"; };
 		DA0B508D222358A00008C579 /* SmartShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0B5090222358A00008C579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2063F0B35964ADB9B8B720 /* Pods_SmartShopperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,8 @@
 			children = (
 				E92882EC0213C12BF743B163 /* Pods-SmartShopper.debug.xcconfig */,
 				CA12F3A2F58552C79488D85A /* Pods-SmartShopper.release.xcconfig */,
+				67F36A939FDCFC411DFF3374 /* Pods-SmartShopperTests.debug.xcconfig */,
+				700B7EB2E4B9089EF73280DB /* Pods-SmartShopperTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -131,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				284D1607DAB94F485E27B9BA /* Pods_SmartShopper.framework */,
+				7B4E9758AAAC030631AF423A /* Pods_SmartShopperTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,6 +154,7 @@
 				DA0B5089222358A00008C579 /* Sources */,
 				DA0B508A222358A00008C579 /* Frameworks */,
 				DA0B508B222358A00008C579 /* Resources */,
+				D77789A2669297418B69E86B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +169,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA11D5C622428E8E00F1FC3C /* Build configuration list for PBXNativeTarget "SmartShopperTests" */;
 			buildPhases = (
+				9DC091755E2065967D87A815 /* [CP] Check Pods Manifest.lock */,
 				DA11D5B922428E8E00F1FC3C /* Sources */,
 				DA11D5BA22428E8E00F1FC3C /* Frameworks */,
 				DA11D5BB22428E8E00F1FC3C /* Resources */,
@@ -253,6 +263,52 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DC091755E2065967D87A815 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartShopperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D77789A2669297418B69E86B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartShopper/Pods-SmartShopper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartShopper/Pods-SmartShopper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -468,6 +524,7 @@
 		};
 		DA11D5C422428E8E00F1FC3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67F36A939FDCFC411DFF3374 /* Pods-SmartShopperTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -487,6 +544,7 @@
 		};
 		DA11D5C522428E8E00F1FC3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 700B7EB2E4B9089EF73280DB /* Pods-SmartShopperTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

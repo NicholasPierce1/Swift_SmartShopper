@@ -26,6 +26,7 @@
 		1312501586CC5FE4452F54CFAF903845 /* Socket.IO-Client-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C050143BC0D636F4DA1A56402D175C15 /* Socket.IO-Client-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18DB4CE85DE25A971B476F7AF4A3EB7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEF74F98EC6FC1F7EFC47EE06062678 /* Foundation.framework */; };
 		1B0D217D81E1C022223CD4BF580C1AF7 /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC2B2E9EDFA4176FF5699071D252A3 /* SSLClientCertificate.swift */; };
+		2298E2F24B2AAC59E67B6D3ABBC869B4 /* Pods-SmartShopperTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6EAA1FD3F90F7DD41068711A6F5DF9 /* Pods-SmartShopperTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		230EE5B38452A1B27D238B3707F0636C /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495B5284A21F920C3A5A74406E2656A /* SocketPacket.swift */; };
 		25E2FFDDCAB6EDA5D1F5EE6677A775AE /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DDB60F3D6389CCC16D0B6E76871E91 /* SocketStringReader.swift */; };
 		27DA836EA16E591811C108A0A5DAEEB1 /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71B5B247B0993C1A34F8AF5A20B078B /* SocketLogger.swift */; };
@@ -33,11 +34,12 @@
 		335241311F92213C1150B2DEDA6D3B6F /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183B1F33E2357220C890F2F7D45F1D8B /* SocketIOClientOption.swift */; };
 		36277AE2AA55C616E58BF2F984DE68E6 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564DCFCA659D651EFB02B626CB94576 /* SocketManager.swift */; };
 		3CC212D5B6E3D39017A2B29344CBB5A1 /* SocketManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2FAC01D332536C0DE6C3AA1E35505 /* SocketManagerSpec.swift */; };
-		4397945F264C90D005D6DD43509A555F /* Pods-SmartShopper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A71C9F396AB4961ABE89047F474B0240 /* Pods-SmartShopper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4397945F264C90D005D6DD43509A555F /* Pods-SmartShopper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9753E6C383D92D4CB8EB47286BB2B4 /* Pods-SmartShopper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4438659321753B0B836316D955EF9FBE /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6023D65A98DCB845D63F718E84B01F6 /* SocketIOClient.swift */; };
 		46CF8DC681F5E34E99AB016E707DAE79 /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD656436D865322545B7813BE2B73BB /* SocketAckManager.swift */; };
 		481F3675489CC0FCC00BB5A6EA41FD46 /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2766694D51B0DE22052D9CE5987D2CDB /* SocketEventHandler.swift */; };
 		48C1F2679219F25279EF904B77C773E2 /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA48F14AFD5463CB4FE45A48D72BCC2 /* SocketAckEmitter.swift */; };
+		4E23270829B7EEDE19A88B84502390BC /* Pods-SmartShopperTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A865E4BAC4E85313EC7A55930CB99C /* Pods-SmartShopperTests-dummy.m */; };
 		63579A1919ED695C3129CEC063930FF5 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E768D44BBE77B67CADF4C1D07FACE6 /* Compression.swift */; };
 		6AE03DBABD7B7F052157B45EFAC04084 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579DE844423A76A6E75D5AC8F73CEDB9 /* Starscream.framework */; };
 		71A4FC4B8E36BDF2939D6C1E2C51DD46 /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0349ACE02E374483F8DC44149B5A57 /* SocketEngineSpec.swift */; };
@@ -52,8 +54,9 @@
 		CEA43D69F31582FF531167F0630DF162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEF74F98EC6FC1F7EFC47EE06062678 /* Foundation.framework */; };
 		D1B12BB6342CE80449482A20CD7AAC04 /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E469F3F73D53DBD78E752190208968D /* SocketEnginePacketType.swift */; };
 		D783049111A2BC579FC868AC53BE71F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEF74F98EC6FC1F7EFC47EE06062678 /* Foundation.framework */; };
-		D80AE2628A5E2E53686E8F83617AE0DC /* Pods-SmartShopper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE57B71DED27F4E13992582A79A9D04A /* Pods-SmartShopper-dummy.m */; };
+		D80AE2628A5E2E53686E8F83617AE0DC /* Pods-SmartShopper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0789F62B1A243B5ABEA59380E71AFC /* Pods-SmartShopper-dummy.m */; };
 		D879A7E88AB128F87AF30B67AF3D15CF /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3000E86925E6C47A587B79886771D /* SocketAnyEvent.swift */; };
+		D97FCCB124A9BC761F46649BC3AAD395 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEF74F98EC6FC1F7EFC47EE06062678 /* Foundation.framework */; };
 		D9EF0EA59B25519785E01A6DCA8BA290 /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D5BA06B814406AD05E354FC028019D /* SocketEngineClient.swift */; };
 		DA841CE6786C61817A2492B5F51B152B /* SocketParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384430BA2B1C370E9C2011159B9CAF8 /* SocketParsable.swift */; };
 		E5B84783329BE9BBB4E087FD1415C350 /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C972C5B27BF2689922775F541E82D4 /* SocketEngine.swift */; };
@@ -97,6 +100,13 @@
 			remoteGlobalIDString = 252D4D8F5964F67B455BAFF32439DCA3;
 			remoteInfo = Starscream;
 		};
+		B5D48AB96AE54CDAED7725A91D34E9EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2CA98BCB6A8BC5315170146B0DFC918;
+			remoteInfo = "Pods-SmartShopper";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -107,7 +117,6 @@
 		0190317C1764FA529E582767F5CB4480 /* JSONHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONHelper.h; path = SDK/ios/backendless/include/JSONHelper.h; sourceTree = "<group>"; };
 		04E5BF99EEFA42296183B4782C9965AA /* SharedObjectMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SharedObjectMessage.h; path = SDK/ios/backendless/include/SharedObjectMessage.h; sourceTree = "<group>"; };
 		05CEEE59764E63CD53428A86E94DFA12 /* MultiDimArrayWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultiDimArrayWriter.h; path = SDK/ios/backendless/include/MultiDimArrayWriter.h; sourceTree = "<group>"; };
-		07F2220788B2435BD7C1163B1F471303 /* Pods-SmartShopper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartShopper.release.xcconfig"; sourceTree = "<group>"; };
 		082F7C481FA74E957CE7E6D6590D8708 /* ICacheableAdaptingType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICacheableAdaptingType.h; path = SDK/ios/backendless/include/ICacheableAdaptingType.h; sourceTree = "<group>"; };
 		09B80541F0418486530E9C87E271A145 /* V3DateReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3DateReader.h; path = SDK/ios/backendless/include/V3DateReader.h; sourceTree = "<group>"; };
 		0A540A7D3F4B8764157CE09031E939DD /* BulkEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BulkEvent.h; path = SDK/ios/backendless/include/BulkEvent.h; sourceTree = "<group>"; };
@@ -125,12 +134,13 @@
 		153C3B3165A6847889CF896F6B9EED0D /* ObjectSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectSerializer.h; path = SDK/ios/backendless/include/ObjectSerializer.h; sourceTree = "<group>"; };
 		156A64C96020D892EEB394CD828E3422 /* ISharedObjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISharedObjectBase.h; path = SDK/ios/backendless/include/ISharedObjectBase.h; sourceTree = "<group>"; };
 		16E5633DAE6B4EF18AC87BB3A401CD33 /* IEventListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEventListener.h; path = SDK/ios/backendless/include/IEventListener.h; sourceTree = "<group>"; };
+		174D96558E912C999965515938A34F30 /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SocketIO.framework; path = "Socket.IO-Client-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1781A1F0E85C213C4DC6296E9647CD32 /* Socket.IO-Client-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Socket.IO-Client-Swift-dummy.m"; sourceTree = "<group>"; };
 		17D83CF8F3864964E9EBAD648D1855BD /* BackendlessBeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessBeacon.h; path = SDK/ios/backendless/include/BackendlessBeacon.h; sourceTree = "<group>"; };
-		1800F91A6501D528DCBC3F1385DF467A /* Pods-SmartShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartShopper.debug.xcconfig"; sourceTree = "<group>"; };
 		183B1F33E2357220C890F2F7D45F1D8B /* SocketIOClientOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientOption.swift; path = Source/SocketIO/Client/SocketIOClientOption.swift; sourceTree = "<group>"; };
 		18D87663521B77D54D76A7C95C8AB5BC /* IServiceHandlerProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IServiceHandlerProvider.h; path = SDK/ios/backendless/include/IServiceHandlerProvider.h; sourceTree = "<group>"; };
 		192F45E6025CDBFC51CFB768DF7C8ACF /* MHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MHeader.h; path = SDK/ios/backendless/include/MHeader.h; sourceTree = "<group>"; };
+		1AF6EA0959262AA077D65773AB2454EF /* Pods_SmartShopper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartShopper.framework; path = "Pods-SmartShopper.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B44D3BE28429EF265E33B9C42BB7B45 /* AbstractProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractProperty.h; path = SDK/ios/backendless/include/AbstractProperty.h; sourceTree = "<group>"; };
 		1C5DBC83E90E3402ED0FA431A961B412 /* DataQueryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DataQueryBuilder.h; path = SDK/ios/backendless/include/DataQueryBuilder.h; sourceTree = "<group>"; };
 		1C9174FB01B693CA31EF66BD34DA77AF /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Source/SocketIO/Util/SSLSecurity.swift; sourceTree = "<group>"; };
@@ -152,17 +162,21 @@
 		273AE9762C63172FA58A62CA9D852EC9 /* WebORBSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebORBSerializer.h; path = SDK/ios/backendless/include/WebORBSerializer.h; sourceTree = "<group>"; };
 		2766694D51B0DE22052D9CE5987D2CDB /* SocketEventHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEventHandler.swift; path = Source/SocketIO/Client/SocketEventHandler.swift; sourceTree = "<group>"; };
 		2962BB930D95B9D4766EDC59AEAA3184 /* DateWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateWriter.h; path = SDK/ios/backendless/include/DateWriter.h; sourceTree = "<group>"; };
+		2A08CD8DA331F3A3D3968221D4139BA1 /* Pods-SmartShopper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartShopper-frameworks.sh"; sourceTree = "<group>"; };
 		2A737A2BD362D1952AA9C27E47FC76E9 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
 		2B982F631D6DDA4672D1E2745FA26F16 /* LoadRelationsQueryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoadRelationsQueryBuilder.h; path = SDK/ios/backendless/include/LoadRelationsQueryBuilder.h; sourceTree = "<group>"; };
 		2BFB5A36617B69922AE92B25680D74B5 /* SocketExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketExtensions.swift; path = Source/SocketIO/Util/SocketExtensions.swift; sourceTree = "<group>"; };
 		2C3CED8F63F58517A7D96E7217430D98 /* Call.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Call.h; path = SDK/ios/backendless/include/Call.h; sourceTree = "<group>"; };
 		2C697F5777CC2AB1BB74BC5D1097F6B8 /* IProtocolFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IProtocolFormatter.h; path = SDK/ios/backendless/include/IProtocolFormatter.h; sourceTree = "<group>"; };
+		2DA9C92AE0E2CDFB6BE7C37B039DDF8B /* Pods-SmartShopperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartShopperTests.release.xcconfig"; sourceTree = "<group>"; };
 		2E1D7F4ED290A886333985E9B3E0B0C9 /* LogBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LogBuffer.h; path = SDK/ios/backendless/include/LogBuffer.h; sourceTree = "<group>"; };
 		2E5F1CC10A98FF4EA5EB946E79022726 /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientSpec.swift; path = Source/SocketIO/Client/SocketIOClientSpec.swift; sourceTree = "<group>"; };
 		2E61A14839C0C496CA90144773912B28 /* BooleanReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BooleanReader.h; path = SDK/ios/backendless/include/BooleanReader.h; sourceTree = "<group>"; };
 		2EC0A3A25ECF2D601E2C4A4A64CEC425 /* RTService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTService.h; path = SDK/ios/backendless/include/RTService.h; sourceTree = "<group>"; };
+		2F30FC4B7E5090E123D36BEB2AB15864 /* Pods-SmartShopperTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartShopperTests-Info.plist"; sourceTree = "<group>"; };
 		314853CDF8F73289F4451B7FEF806A50 /* BodyHolderFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BodyHolderFactory.h; path = SDK/ios/backendless/include/BodyHolderFactory.h; sourceTree = "<group>"; };
 		3253CAFEFA62124552F0E7BB80CEA833 /* BEFileInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEFileInfo.h; path = SDK/ios/backendless/include/BEFileInfo.h; sourceTree = "<group>"; };
+		3291886DD2A17957295FD8619885BF19 /* Pods-SmartShopper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartShopper-Info.plist"; sourceTree = "<group>"; };
 		3293103EA7D2B9F78B89AA0C71D9D7C1 /* CommandObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CommandObject.h; path = SDK/ios/backendless/include/CommandObject.h; sourceTree = "<group>"; };
 		32A5302E6BA165392424A6EADB71957A /* PublishMessageInfoWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PublishMessageInfoWrapper.h; path = SDK/ios/backendless/include/PublishMessageInfoWrapper.h; sourceTree = "<group>"; };
 		331734D7FBCBDDDBFD98133608692175 /* PropertyBagWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PropertyBagWriter.h; path = SDK/ios/backendless/include/PropertyBagWriter.h; sourceTree = "<group>"; };
@@ -172,14 +186,17 @@
 		35DDB60F3D6389CCC16D0B6E76871E91 /* SocketStringReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketStringReader.swift; path = Source/SocketIO/Util/SocketStringReader.swift; sourceTree = "<group>"; };
 		36567ACAC70B37F654ABB41518F993C8 /* AuthorizationException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AuthorizationException.h; path = SDK/ios/backendless/include/AuthorizationException.h; sourceTree = "<group>"; };
 		36E768D44BBE77B67CADF4C1D07FACE6 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Starscream/Compression.swift; sourceTree = "<group>"; };
+		38DAB5C93AF8629CC9325F4D368EBBAA /* Pods_SmartShopperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartShopperTests.framework; path = "Pods-SmartShopperTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E6CF88F3DDE9BAE9EBA977B1CF7603 /* DEBUG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DEBUG.h; path = SDK/ios/backendless/include/DEBUG.h; sourceTree = "<group>"; };
 		3A1ECB8DCD1A794369401A9F6F55255C /* Backendless.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Backendless.xcconfig; sourceTree = "<group>"; };
 		3AEF74F98EC6FC1F7EFC47EE06062678 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3B085C8CE491FE6698AFC1ACC417403C /* PagedQueryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PagedQueryBuilder.h; path = SDK/ios/backendless/include/PagedQueryBuilder.h; sourceTree = "<group>"; };
+		3B0EE3D16AC2163E39B47279A067E1FC /* Pods-SmartShopperTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmartShopperTests.modulemap"; sourceTree = "<group>"; };
 		3BA54E75BE389C63F3E1401831F33C1D /* GeoService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoService.h; path = SDK/ios/backendless/include/GeoService.h; sourceTree = "<group>"; };
 		3D097CEEBEE2D3891142F4A948DF96FC /* NullHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NullHelper.h; path = SDK/ios/backendless/include/NullHelper.h; sourceTree = "<group>"; };
 		3D2201C89673712A34D57195EF4D6819 /* SharedObjectChanges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SharedObjectChanges.h; path = SDK/ios/backendless/include/SharedObjectChanges.h; sourceTree = "<group>"; };
 		3D8C2C0F8B8E6C8A163DC19E0C9389A6 /* AMFHeaderWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMFHeaderWriter.h; path = SDK/ios/backendless/include/AMFHeaderWriter.h; sourceTree = "<group>"; };
+		3D9753E6C383D92D4CB8EB47286BB2B4 /* Pods-SmartShopper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartShopper-umbrella.h"; sourceTree = "<group>"; };
 		3D9BF8B3EC65532516552B0483AA82CC /* ReconnectAttemptObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReconnectAttemptObject.h; path = SDK/ios/backendless/include/ReconnectAttemptObject.h; sourceTree = "<group>"; };
 		3F4D6564368CD0C71DF03972E8E38BE7 /* UserService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UserService.h; path = SDK/ios/backendless/include/UserService.h; sourceTree = "<group>"; };
 		3F9AE5044F7CAE88CF826E1CD39B5877 /* BodyHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BodyHolder.h; path = SDK/ios/backendless/include/BodyHolder.h; sourceTree = "<group>"; };
@@ -192,6 +209,7 @@
 		44B20EDC3FC08081CB4D52B4F415A195 /* UserProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UserProperty.h; path = SDK/ios/backendless/include/UserProperty.h; sourceTree = "<group>"; };
 		45651C4FD919C854A3021F78C1696A71 /* CacheService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CacheService.h; path = SDK/ios/backendless/include/CacheService.h; sourceTree = "<group>"; };
 		467765C5FB817C70D3BF4AB994379B0B /* RTClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTClient.h; path = SDK/ios/backendless/include/RTClient.h; sourceTree = "<group>"; };
+		47212B70E37AD0ECA57DE6F3EA0AC8F6 /* Pods-SmartShopper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmartShopper.modulemap"; sourceTree = "<group>"; };
 		4721AED8CA6BA91A6B91B53492A07E4A /* MemoryTicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryTicker.h; path = SDK/ios/backendless/include/MemoryTicker.h; sourceTree = "<group>"; };
 		47DB169CAFDC0AD3658E2A5D254C888D /* IPersistenceStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPersistenceStore.h; path = SDK/ios/backendless/include/IPersistenceStore.h; sourceTree = "<group>"; };
 		4ACF639ABFD6B274FBA018B0C947C2BA /* ClientSharedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ClientSharedObject.h; path = SDK/ios/backendless/include/ClientSharedObject.h; sourceTree = "<group>"; };
@@ -199,7 +217,6 @@
 		4D0C6B594597367735ACE493FA8485FA /* ParseContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParseContext.h; path = SDK/ios/backendless/include/ParseContext.h; sourceTree = "<group>"; };
 		4DE9DDB0C87B8000FAC0E77E583AB272 /* ReaderUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderUtils.h; path = SDK/ios/backendless/include/ReaderUtils.h; sourceTree = "<group>"; };
 		4E127F5442D8108BB248DD14C778EFBD /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
-		4F36AD132F64725B63A8A06E55A97E04 /* Pods-SmartShopper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartShopper-acknowledgements.plist"; sourceTree = "<group>"; };
 		4FB029944ACF71CA9B96632988016977 /* QueryOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueryOptions.h; path = SDK/ios/backendless/include/QueryOptions.h; sourceTree = "<group>"; };
 		51ACCCEF2DAA7D80D8498F32B382EE13 /* Engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Engine.h; path = SDK/ios/backendless/include/Engine.h; sourceTree = "<group>"; };
 		52B3B44D4CC3C8A01218B58D1DCDCB93 /* IPresenceListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPresenceListener.h; path = SDK/ios/backendless/include/IPresenceListener.h; sourceTree = "<group>"; };
@@ -209,7 +226,6 @@
 		5567322D8B0BD237E5C6D3470166A912 /* ProtectedBackendlessGeoQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ProtectedBackendlessGeoQuery.h; path = SDK/ios/backendless/include/ProtectedBackendlessGeoQuery.h; sourceTree = "<group>"; };
 		5664DBE691FA512204E42FBF400C018D /* AtomicCountersFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AtomicCountersFactory.h; path = SDK/ios/backendless/include/AtomicCountersFactory.h; sourceTree = "<group>"; };
 		5676D4168081EF00D9CF0365938BC38B /* BackendlessCacheData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCacheData.h; path = SDK/ios/backendless/include/BackendlessCacheData.h; sourceTree = "<group>"; };
-		569C88F9ACD5EA916F4C433C03961598 /* Pods-SmartShopper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartShopper-Info.plist"; sourceTree = "<group>"; };
 		579DE844423A76A6E75D5AC8F73CEDB9 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D61F54F9DC2930EB180D0009F07002 /* AdapterFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AdapterFactory.h; path = SDK/ios/backendless/include/AdapterFactory.h; sourceTree = "<group>"; };
 		58278648C58364BB22F3054C1C8C79B9 /* RTFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTFactory.h; path = SDK/ios/backendless/include/RTFactory.h; sourceTree = "<group>"; };
@@ -239,9 +255,15 @@
 		665C0A545B39D6E97621B9FB79D1DDDA /* FileService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FileService.h; path = SDK/ios/backendless/include/FileService.h; sourceTree = "<group>"; };
 		69A8C32509FFDA5C0164A50EC7984357 /* Socket.IO-Client-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-prefix.pch"; sourceTree = "<group>"; };
 		6A2BA3EB7776E8F4C238446D14D79EA5 /* UICKeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UICKeyChainStore.h; path = SDK/ios/backendless/include/UICKeyChainStore.h; sourceTree = "<group>"; };
+		6B19CFFBA6FAED953B844742C4414480 /* Pods-SmartShopperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartShopperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B6EAA1FD3F90F7DD41068711A6F5DF9 /* Pods-SmartShopperTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartShopperTests-umbrella.h"; sourceTree = "<group>"; };
 		6B88AF87156544C3CDA35199F9CC0201 /* Channel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Channel.h; path = SDK/ios/backendless/include/Channel.h; sourceTree = "<group>"; };
 		6BCDFD64917908F4469D8ECFC74BD2A7 /* BoundPropertyBagWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BoundPropertyBagWriter.h; path = SDK/ios/backendless/include/BoundPropertyBagWriter.h; sourceTree = "<group>"; };
+		6BE664206517D13C7E35DE4562A1DDF1 /* Pods-SmartShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartShopper.debug.xcconfig"; sourceTree = "<group>"; };
+		6C8BFD1768FE7304458C400AD9EF54CF /* Pods-SmartShopper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartShopper.release.xcconfig"; sourceTree = "<group>"; };
+		6CBD6E65D101A83D080E466843B5261E /* Pods-SmartShopper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartShopper-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6D39BA598DC26F2460EE5B27CC375818 /* DateType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateType.h; path = SDK/ios/backendless/include/DateType.h; sourceTree = "<group>"; };
+		6E0789F62B1A243B5ABEA59380E71AFC /* Pods-SmartShopper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartShopper-dummy.m"; sourceTree = "<group>"; };
 		6E90C4D27FFF9DE417A8F85AD4C4B38C /* IStreamDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IStreamDispatcher.h; path = SDK/ios/backendless/include/IStreamDispatcher.h; sourceTree = "<group>"; };
 		6EA48F14AFD5463CB4FE45A48D72BCC2 /* SocketAckEmitter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAckEmitter.swift; path = Source/SocketIO/Ack/SocketAckEmitter.swift; sourceTree = "<group>"; };
 		70AE1D89E5F038BF022F07BC5FBF22C8 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
@@ -254,11 +276,12 @@
 		722628B49E11E432950486C42ADEC7EF /* ISerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISerializer.h; path = SDK/ios/backendless/include/ISerializer.h; sourceTree = "<group>"; };
 		725A9347A977DF78517657060123595B /* AudioData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioData.h; path = SDK/ios/backendless/include/AudioData.h; sourceTree = "<group>"; };
 		72786691EF1AE47530E07C0114624FBE /* CommandMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CommandMessage.h; path = SDK/ios/backendless/include/CommandMessage.h; sourceTree = "<group>"; };
+		732EAAF71BD3EB7192C473DB355DB030 /* Pods-SmartShopperTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartShopperTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		75421D9F35398C77E7A5C5ADEDCC89EA /* IAtomicCounters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAtomicCounters.h; path = SDK/ios/backendless/include/IAtomicCounters.h; sourceTree = "<group>"; };
-		75871731604C5EBAD86F02CDFB15E751 /* Pods-SmartShopper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartShopper-acknowledgements.markdown"; sourceTree = "<group>"; };
 		75A1C741B8DCDF17372A5123BAE07948 /* BooleanType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BooleanType.h; path = SDK/ios/backendless/include/BooleanType.h; sourceTree = "<group>"; };
 		7667BF2D527037DB6AED9A934A31D555 /* UTFStringReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UTFStringReader.h; path = SDK/ios/backendless/include/UTFStringReader.h; sourceTree = "<group>"; };
 		766E2E3AB131EEE540E466B37BE8309D /* RTMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTMessaging.h; path = SDK/ios/backendless/include/RTMessaging.h; sourceTree = "<group>"; };
+		76A865E4BAC4E85313EC7A55930CB99C /* Pods-SmartShopperTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartShopperTests-dummy.m"; sourceTree = "<group>"; };
 		76F99B5D8726479B599A3699FFB7C48B /* AnonymousObjectReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnonymousObjectReader.h; path = SDK/ios/backendless/include/AnonymousObjectReader.h; sourceTree = "<group>"; };
 		77B25FFDA7A93CE6EB6DEBC98CF0423F /* IDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDeserializer.h; path = SDK/ios/backendless/include/IDeserializer.h; sourceTree = "<group>"; };
 		77C2FAC01D332536C0DE6C3AA1E35505 /* SocketManagerSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketManagerSpec.swift; path = Source/SocketIO/Manager/SocketManagerSpec.swift; sourceTree = "<group>"; };
@@ -287,7 +310,6 @@
 		8B4BBA0D76FFDDE1DFF15D493AEDF0E9 /* BackendlessCacheKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCacheKey.h; path = SDK/ios/backendless/include/BackendlessCacheKey.h; sourceTree = "<group>"; };
 		8C030BEA836BEBDE002C79C1FF4535DD /* ClientCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ClientCallback.h; path = SDK/ios/backendless/include/ClientCallback.h; sourceTree = "<group>"; };
 		8C41F749EF9827D32726966CB9D9931A /* Backendless.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Backendless.h; path = SDK/ios/backendless/include/Backendless.h; sourceTree = "<group>"; };
-		8D2A5F6B00BD857136D981A7CDBC5E91 /* Pods-SmartShopper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartShopper-frameworks.sh"; sourceTree = "<group>"; };
 		8F54649CE55554B127BC525238F11084 /* DataStoreFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DataStoreFactory.h; path = SDK/ios/backendless/include/DataStoreFactory.h; sourceTree = "<group>"; };
 		8F5E8BBB3905A495D8F5761940427FDE /* Logging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Logging.h; path = SDK/ios/backendless/include/Logging.h; sourceTree = "<group>"; };
 		8F85058115F001BD3B14B4448915DC3A /* Ping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Ping.h; path = SDK/ios/backendless/include/Ping.h; sourceTree = "<group>"; };
@@ -314,15 +336,14 @@
 		9B0D46F9D6F3915F092555D187320084 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/Starscream/SSLSecurity.swift; sourceTree = "<group>"; };
 		9D34D4C893DF7F6447A08FFF7905C871 /* Aggregate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Aggregate.h; path = SDK/ios/backendless/include/Aggregate.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DE9808F862840F35B669C30AA1674AD /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SocketIO.framework; path = "Socket.IO-Client-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02F3B99DE186E8AF751D28ADD4D396E /* PublishOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PublishOptions.h; path = SDK/ios/backendless/include/PublishOptions.h; sourceTree = "<group>"; };
 		A052BC2CA3282FF120D2F526BDF506D0 /* V3ObjectReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3ObjectReader.h; path = SDK/ios/backendless/include/V3ObjectReader.h; sourceTree = "<group>"; };
 		A1C972C5B27BF2689922775F541E82D4 /* SocketEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngine.swift; path = Source/SocketIO/Engine/SocketEngine.swift; sourceTree = "<group>"; };
 		A38FC23E7710F625D7147642B58E2027 /* ObjectWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectWriter.h; path = SDK/ios/backendless/include/ObjectWriter.h; sourceTree = "<group>"; };
 		A3D50B7976827C54D290869749E87D53 /* BaseRTMPProtocolEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseRTMPProtocolEncoder.h; path = SDK/ios/backendless/include/BaseRTMPProtocolEncoder.h; sourceTree = "<group>"; };
+		A3F27114CA129680AC31CEB7AC78FB67 /* Pods-SmartShopperTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartShopperTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A5688D44AC05362CCDB2D3C282AE097A /* IDataStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDataStore.h; path = SDK/ios/backendless/include/IDataStore.h; sourceTree = "<group>"; };
 		A62AA319167CAEF0A757B335E65E1C38 /* UserDefaultsHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UserDefaultsHelper.h; path = SDK/ios/backendless/include/UserDefaultsHelper.h; sourceTree = "<group>"; };
-		A71C9F396AB4961ABE89047F474B0240 /* Pods-SmartShopper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartShopper-umbrella.h"; sourceTree = "<group>"; };
 		A72E5C1057764667DEF86734AEEB3B93 /* IVideoStreamCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IVideoStreamCodec.h; path = SDK/ios/backendless/include/IVideoStreamCodec.h; sourceTree = "<group>"; };
 		A8550D911192F440DDFFB08EC5D0EC12 /* IRTMProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRTMProtocol.h; path = SDK/ios/backendless/include/IRTMProtocol.h; sourceTree = "<group>"; };
 		A8639E4B859F9233FF1B4F13A85C5D57 /* IResponseAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IResponseAdapter.h; path = SDK/ios/backendless/include/IResponseAdapter.h; sourceTree = "<group>"; };
@@ -341,6 +362,7 @@
 		B495B5284A21F920C3A5A74406E2656A /* SocketPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketPacket.swift; path = Source/SocketIO/Parse/SocketPacket.swift; sourceTree = "<group>"; };
 		B564DCFCA659D651EFB02B626CB94576 /* SocketManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketManager.swift; path = Source/SocketIO/Manager/SocketManager.swift; sourceTree = "<group>"; };
 		B5A16761575A5E8326EDEA1EF144BE0E /* RTMPConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTMPConstants.h; path = SDK/ios/backendless/include/RTMPConstants.h; sourceTree = "<group>"; };
+		B7E692DC91693859FC774341EFD24D69 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86FC37228C07D3D5770883D93A590C0 /* V3ByteArrayReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3ByteArrayReader.h; path = SDK/ios/backendless/include/V3ByteArrayReader.h; sourceTree = "<group>"; };
 		B87FD80F30A1EFBC912228D0CE2BA67D /* ConcreteObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ConcreteObject.h; path = SDK/ios/backendless/include/ConcreteObject.h; sourceTree = "<group>"; };
 		B9888451B9F3D2FCA89C20F7BE73CE59 /* GeoFence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoFence.h; path = SDK/ios/backendless/include/GeoFence.h; sourceTree = "<group>"; };
@@ -350,8 +372,6 @@
 		BBFC280B713E006D6E4487FA237D3E4B /* CustomService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CustomService.h; path = SDK/ios/backendless/include/CustomService.h; sourceTree = "<group>"; };
 		BCD6A9016B78751E73A41177153DC6E2 /* RequestParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RequestParser.h; path = SDK/ios/backendless/include/RequestParser.h; sourceTree = "<group>"; };
 		BE21BCAC85F1BA774161B23C9E67FF5A /* IntegerReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntegerReader.h; path = SDK/ios/backendless/include/IntegerReader.h; sourceTree = "<group>"; };
-		BE2B5AC5D0DBEA9F94B997A2EBFAD780 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE57B71DED27F4E13992582A79A9D04A /* Pods-SmartShopper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartShopper-dummy.m"; sourceTree = "<group>"; };
 		BED5AC36EA4A43F4E4F25A772A722ED0 /* PointerReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PointerReader.h; path = SDK/ios/backendless/include/PointerReader.h; sourceTree = "<group>"; };
 		BFD656436D865322545B7813BE2B73BB /* SocketAckManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAckManager.swift; path = Source/SocketIO/Ack/SocketAckManager.swift; sourceTree = "<group>"; };
 		C050143BC0D636F4DA1A56402D175C15 /* Socket.IO-Client-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-umbrella.h"; sourceTree = "<group>"; };
@@ -379,7 +399,6 @@
 		CF18C48770371E53EDC77C10479E2362 /* ExecutionType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExecutionType.h; path = SDK/ios/backendless/include/ExecutionType.h; sourceTree = "<group>"; };
 		CFDEFA52C62798A3F8A6B762E9AF2E2E /* IPendingServiceCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPendingServiceCall.h; path = SDK/ios/backendless/include/IPendingServiceCall.h; sourceTree = "<group>"; };
 		CFFE80E61900937FAC1023A54884C562 /* NotAReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotAReader.h; path = SDK/ios/backendless/include/NotAReader.h; sourceTree = "<group>"; };
-		D08FFB3101715D279EA71C16DDA00020 /* Pods_SmartShopper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartShopper.framework; path = "Pods-SmartShopper.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21D313F0E15FDCB62EE98C1F431CF0A /* IAudioStreamCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAudioStreamCodec.h; path = SDK/ios/backendless/include/IAudioStreamCodec.h; sourceTree = "<group>"; };
 		D47B67D8C297C559C9D6DA97283DEE19 /* BackendlessCachePolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCachePolicy.h; path = SDK/ios/backendless/include/BackendlessCachePolicy.h; sourceTree = "<group>"; };
 		D4EF7DF0372031AA35843AF509550494 /* Request.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Request.h; path = SDK/ios/backendless/include/Request.h; sourceTree = "<group>"; };
@@ -405,6 +424,7 @@
 		EBB09A224ED6D0C258E64EC5BA10EF0E /* ISharedObjectMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISharedObjectMessage.h; path = SDK/ios/backendless/include/ISharedObjectMessage.h; sourceTree = "<group>"; };
 		EC2B60BF166E5CAD60D34C8224463DD8 /* V3ReferenceCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3ReferenceCache.h; path = SDK/ios/backendless/include/V3ReferenceCache.h; sourceTree = "<group>"; };
 		ECBDBEB20420EDA08B0CF2ECEBC8B57D /* IAttributeStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAttributeStore.h; path = SDK/ios/backendless/include/IAttributeStore.h; sourceTree = "<group>"; };
+		ED572F0E965B24128A9D7DABBEB58E3D /* Pods-SmartShopper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartShopper-acknowledgements.plist"; sourceTree = "<group>"; };
 		F018443503F63D9D55398FE12B22BFB4 /* ReaderReferenceCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderReferenceCache.h; path = SDK/ios/backendless/include/ReaderReferenceCache.h; sourceTree = "<group>"; };
 		F22EF0DDED47BB3A5F817C9A717AF16B /* DeliveryOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DeliveryOptions.h; path = SDK/ios/backendless/include/DeliveryOptions.h; sourceTree = "<group>"; };
 		F2D683CD8F0A89A77D7F6A411C11B52E /* IRTMPEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRTMPEvent.h; path = SDK/ios/backendless/include/IRTMPEvent.h; sourceTree = "<group>"; };
@@ -416,7 +436,6 @@
 		F967E0231CCCFFA4AD083D8CFC057EFB /* RTMProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTMProtocol.h; path = SDK/ios/backendless/include/RTMProtocol.h; sourceTree = "<group>"; };
 		FBBB45C2801B26DB3272999FED13A760 /* NumberWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NumberWriter.h; path = SDK/ios/backendless/include/NumberWriter.h; sourceTree = "<group>"; };
 		FBCFBD14113398E14487EA662818D72C /* Invoke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Invoke.h; path = SDK/ios/backendless/include/Invoke.h; sourceTree = "<group>"; };
-		FDAC5EB18F644CFF888F622FB2BD02D9 /* Pods-SmartShopper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmartShopper.modulemap"; sourceTree = "<group>"; };
 		FF864E44619085AE90E3D8894F520AF2 /* BaseEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseEvent.h; path = SDK/ios/backendless/include/BaseEvent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -438,6 +457,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		699BC9718F1480E3CEB1C7EC71B7EB03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97FCCB124A9BC761F46649BC3AAD395 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF4458F034E940D341C43227A463E102 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,6 +476,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		088DDCD45490B74CBEB4677ECF5C018D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AF6EA0959262AA077D65773AB2454EF /* Pods_SmartShopper.framework */,
+				38DAB5C93AF8629CC9325F4D368EBBAA /* Pods_SmartShopperTests.framework */,
+				174D96558E912C999965515938A34F30 /* SocketIO.framework */,
+				B7E692DC91693859FC774341EFD24D69 /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		14ECC25A1A73D647CD3F640F38510969 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,6 +499,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		1528243A4FB91321D8769E21CCC74D2B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97960B80213F6023467B87CFF3473BD8 /* Pods-SmartShopper */,
+				E8118D69F08D184F17AA4AAB214ECB7E /* Pods-SmartShopperTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		426A90A04AC826D23CC7B8CCCB9D55F8 /* Backendless */ = {
@@ -760,14 +807,6 @@
 			path = Starscream;
 			sourceTree = "<group>";
 		};
-		5E7A41CD0A48EEDC976E687B8765542F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CD03B27427F065070B53052DE3899836 /* Pods-SmartShopper */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		65F2A75F51FCEF4C2AAD0735F2DC50B2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -776,6 +815,23 @@
 				58AEF4C7A2E935E38EEC58C7223D5F50 /* Starscream */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		97960B80213F6023467B87CFF3473BD8 /* Pods-SmartShopper */ = {
+			isa = PBXGroup;
+			children = (
+				47212B70E37AD0ECA57DE6F3EA0AC8F6 /* Pods-SmartShopper.modulemap */,
+				6CBD6E65D101A83D080E466843B5261E /* Pods-SmartShopper-acknowledgements.markdown */,
+				ED572F0E965B24128A9D7DABBEB58E3D /* Pods-SmartShopper-acknowledgements.plist */,
+				6E0789F62B1A243B5ABEA59380E71AFC /* Pods-SmartShopper-dummy.m */,
+				2A08CD8DA331F3A3D3968221D4139BA1 /* Pods-SmartShopper-frameworks.sh */,
+				3291886DD2A17957295FD8619885BF19 /* Pods-SmartShopper-Info.plist */,
+				3D9753E6C383D92D4CB8EB47286BB2B4 /* Pods-SmartShopper-umbrella.h */,
+				6BE664206517D13C7E35DE4562A1DDF1 /* Pods-SmartShopper.debug.xcconfig */,
+				6C8BFD1768FE7304458C400AD9EF54CF /* Pods-SmartShopper.release.xcconfig */,
+			);
+			name = "Pods-SmartShopper";
+			path = "Target Support Files/Pods-SmartShopper";
 			sourceTree = "<group>";
 		};
 		9B95E784925868009276BDBDD00F489A /* iOS */ = {
@@ -795,31 +851,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CD03B27427F065070B53052DE3899836 /* Pods-SmartShopper */ = {
-			isa = PBXGroup;
-			children = (
-				FDAC5EB18F644CFF888F622FB2BD02D9 /* Pods-SmartShopper.modulemap */,
-				75871731604C5EBAD86F02CDFB15E751 /* Pods-SmartShopper-acknowledgements.markdown */,
-				4F36AD132F64725B63A8A06E55A97E04 /* Pods-SmartShopper-acknowledgements.plist */,
-				BE57B71DED27F4E13992582A79A9D04A /* Pods-SmartShopper-dummy.m */,
-				8D2A5F6B00BD857136D981A7CDBC5E91 /* Pods-SmartShopper-frameworks.sh */,
-				569C88F9ACD5EA916F4C433C03961598 /* Pods-SmartShopper-Info.plist */,
-				A71C9F396AB4961ABE89047F474B0240 /* Pods-SmartShopper-umbrella.h */,
-				1800F91A6501D528DCBC3F1385DF467A /* Pods-SmartShopper.debug.xcconfig */,
-				07F2220788B2435BD7C1163B1F471303 /* Pods-SmartShopper.release.xcconfig */,
-			);
-			name = "Pods-SmartShopper";
-			path = "Target Support Files/Pods-SmartShopper";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				B2E51377677617D42ED70F58E235B723 /* Frameworks */,
 				65F2A75F51FCEF4C2AAD0735F2DC50B2 /* Pods */,
-				EE4C5871B0145DE431AE8FAB00BC3061 /* Products */,
-				5E7A41CD0A48EEDC976E687B8765542F /* Targets Support Files */,
+				088DDCD45490B74CBEB4677ECF5C018D /* Products */,
+				1528243A4FB91321D8769E21CCC74D2B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -866,14 +905,20 @@
 			path = "../Target Support Files/Backendless";
 			sourceTree = "<group>";
 		};
-		EE4C5871B0145DE431AE8FAB00BC3061 /* Products */ = {
+		E8118D69F08D184F17AA4AAB214ECB7E /* Pods-SmartShopperTests */ = {
 			isa = PBXGroup;
 			children = (
-				D08FFB3101715D279EA71C16DDA00020 /* Pods_SmartShopper.framework */,
-				9DE9808F862840F35B669C30AA1674AD /* SocketIO.framework */,
-				BE2B5AC5D0DBEA9F94B997A2EBFAD780 /* Starscream.framework */,
+				3B0EE3D16AC2163E39B47279A067E1FC /* Pods-SmartShopperTests.modulemap */,
+				A3F27114CA129680AC31CEB7AC78FB67 /* Pods-SmartShopperTests-acknowledgements.markdown */,
+				732EAAF71BD3EB7192C473DB355DB030 /* Pods-SmartShopperTests-acknowledgements.plist */,
+				76A865E4BAC4E85313EC7A55930CB99C /* Pods-SmartShopperTests-dummy.m */,
+				2F30FC4B7E5090E123D36BEB2AB15864 /* Pods-SmartShopperTests-Info.plist */,
+				6B6EAA1FD3F90F7DD41068711A6F5DF9 /* Pods-SmartShopperTests-umbrella.h */,
+				6B19CFFBA6FAED953B844742C4414480 /* Pods-SmartShopperTests.debug.xcconfig */,
+				2DA9C92AE0E2CDFB6BE7C37B039DDF8B /* Pods-SmartShopperTests.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-SmartShopperTests";
+			path = "Target Support Files/Pods-SmartShopperTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -884,6 +929,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1312501586CC5FE4452F54CFAF903845 /* Socket.IO-Client-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4E27BEAEE663440833DE59100A01C3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2298E2F24B2AAC59E67B6D3ABBC869B4 /* Pods-SmartShopperTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -921,7 +974,7 @@
 			);
 			name = Starscream;
 			productName = Starscream;
-			productReference = BE2B5AC5D0DBEA9F94B997A2EBFAD780 /* Starscream.framework */;
+			productReference = B7E692DC91693859FC774341EFD24D69 /* Starscream.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		2765368D021F2D7E00FDB41BFA2D97AC /* Socket.IO-Client-Swift */ = {
@@ -940,7 +993,7 @@
 			);
 			name = "Socket.IO-Client-Swift";
 			productName = "Socket.IO-Client-Swift";
-			productReference = 9DE9808F862840F35B669C30AA1674AD /* SocketIO.framework */;
+			productReference = 174D96558E912C999965515938A34F30 /* SocketIO.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B2CA98BCB6A8BC5315170146B0DFC918 /* Pods-SmartShopper */ = {
@@ -961,7 +1014,26 @@
 			);
 			name = "Pods-SmartShopper";
 			productName = "Pods-SmartShopper";
-			productReference = D08FFB3101715D279EA71C16DDA00020 /* Pods_SmartShopper.framework */;
+			productReference = 1AF6EA0959262AA077D65773AB2454EF /* Pods_SmartShopper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA9661DE14A90BEEB1A1483FC6D2F464 /* Pods-SmartShopperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA28FEA8F1E31D4740007B07E8996911 /* Build configuration list for PBXNativeTarget "Pods-SmartShopperTests" */;
+			buildPhases = (
+				E4E27BEAEE663440833DE59100A01C3F /* Headers */,
+				2CD5FB61A4DE58F843AE534594644F75 /* Sources */,
+				699BC9718F1480E3CEB1C7EC71B7EB03 /* Frameworks */,
+				5D56D024EF7C109896FC6EDCE7A34E08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF72AF9F9F60BB8CA76469FE84B21A27 /* PBXTargetDependency */,
+			);
+			name = "Pods-SmartShopperTests";
+			productName = "Pods-SmartShopperTests";
+			productReference = 38DAB5C93AF8629CC9325F4D368EBBAA /* Pods_SmartShopperTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -981,12 +1053,13 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = EE4C5871B0145DE431AE8FAB00BC3061 /* Products */;
+			productRefGroup = 088DDCD45490B74CBEB4677ECF5C018D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				13D7D0AADDC50E5FA533BC1BEEDCDBAF /* Backendless */,
 				B2CA98BCB6A8BC5315170146B0DFC918 /* Pods-SmartShopper */,
+				DA9661DE14A90BEEB1A1483FC6D2F464 /* Pods-SmartShopperTests */,
 				2765368D021F2D7E00FDB41BFA2D97AC /* Socket.IO-Client-Swift */,
 				252D4D8F5964F67B455BAFF32439DCA3 /* Starscream */,
 			);
@@ -995,6 +1068,13 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		11CF2BB0648A8206D5638B4E09ED5924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D56D024EF7C109896FC6EDCE7A34E08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1018,6 +1098,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2CD5FB61A4DE58F843AE534594644F75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E23270829B7EEDE19A88B84502390BC /* Pods-SmartShopperTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D0E280FE46FF23CE0E4666589238AE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1104,6 +1192,12 @@
 			target = 2765368D021F2D7E00FDB41BFA2D97AC /* Socket.IO-Client-Swift */;
 			targetProxy = 1D750CCA3E21BEFC1210923C2D62B058 /* PBXContainerItemProxy */;
 		};
+		BF72AF9F9F60BB8CA76469FE84B21A27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SmartShopper";
+			target = B2CA98BCB6A8BC5315170146B0DFC918 /* Pods-SmartShopper */;
+			targetProxy = B5D48AB96AE54CDAED7725A91D34E9EA /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -1136,45 +1230,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		115924D1798172206CA946E1D623ADFD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07F2220788B2435BD7C1163B1F471303 /* Pods-SmartShopper.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1218,6 +1273,83 @@
 			};
 			name = Release;
 		};
+		5074C7512695EF7CDBE03F5AC1D11DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BE664206517D13C7E35DE4562A1DDF1 /* Pods-SmartShopper.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51E3BE1C74B9DECB08DD8C39403F8D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C8BFD1768FE7304458C400AD9EF54CF /* Pods-SmartShopper.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		76DA84432A206E34EB7B665999D82529 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A1ECB8DCD1A794369401A9F6F55255C /* Backendless.xcconfig */;
@@ -1234,7 +1366,81 @@
 			};
 			name = Debug;
 		};
-		7C7D9FC81F470AE33FF86230A663FBDD /* Release */ = {
+		7F4BF63580650355E31D6E24CC185CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DA9C92AE0E2CDFB6BE7C37B039DDF8B /* Pods-SmartShopperTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SmartShopperTests/Pods-SmartShopperTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SmartShopperTests/Pods-SmartShopperTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		91E863378BCB92BCAF479F8BF4A03AB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0EB91F2EDDD79E77CD5E57937D2E9DB /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1282,7 +1488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1294,10 +1500,12 @@
 			};
 			name = Release;
 		};
-		91E863378BCB92BCAF479F8BF4A03AB2 /* Debug */ = {
+		BFEF778B22936A2BE0659921BEA14F01 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0EB91F2EDDD79E77CD5E57937D2E9DB /* Starscream.xcconfig */;
+			baseConfigurationReference = 6B19CFFBA6FAED953B844742C4414480 /* Pods-SmartShopperTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1307,29 +1515,30 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SmartShopperTests/Pods-SmartShopperTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
-				PRODUCT_MODULE_NAME = Starscream;
-				PRODUCT_NAME = Starscream;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SmartShopperTests/Pods-SmartShopperTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		95CDB1BD3AAEFAFB16FDBEBBACC13B2E /* Debug */ = {
+		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1380,7 +1589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1390,44 +1599,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		A8E0772B8202545C8DC2C36F9ACAC906 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1800F91A6501D528DCBC3F1385DF467A /* Pods-SmartShopper.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1498,8 +1669,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				95CDB1BD3AAEFAFB16FDBEBBACC13B2E /* Debug */,
-				7C7D9FC81F470AE33FF86230A663FBDD /* Release */,
+				C1391485F05B41BD35738A433056B7FA /* Debug */,
+				A105C1752A0A49B30ED621B71E226CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1507,8 +1678,8 @@
 		4D84F5C7A37D69B7751E3671D1854788 /* Build configuration list for PBXNativeTarget "Pods-SmartShopper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8E0772B8202545C8DC2C36F9ACAC906 /* Debug */,
-				115924D1798172206CA946E1D623ADFD /* Release */,
+				5074C7512695EF7CDBE03F5AC1D11DAD /* Debug */,
+				51E3BE1C74B9DECB08DD8C39403F8D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1527,6 +1698,15 @@
 			buildConfigurations = (
 				FF1DC26194E5089602D926A75BC4A942 /* Debug */,
 				04108952BBDAE4870716C69D57B8AC06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA28FEA8F1E31D4740007B07E8996911 /* Build configuration list for PBXNativeTarget "Pods-SmartShopperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFEF778B22936A2BE0659921BEA14F01 /* Debug */,
+				7F4BF63580650355E31D6E24CC185CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

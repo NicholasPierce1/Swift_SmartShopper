@@ -13,8 +13,10 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // clears label
+        
         // appends an observer
-        NotificationCenter.default.addObserver(self, selector: #selector(checkResults), name: Notification.Name.searchComplete, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(checkResults(_ :)), name: Notification.Name.searchComplete, object: nil)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -57,7 +59,7 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     
         @IBAction func doSomething(_ sender: Any?){
-            DispatchQueue.global(qos: .userInitiated).async{
+            DispatchQueue.global(qos: .userInteractive).async{
                 // did stuff-- got new content
                 DispatchQueue.main.async {
                     // updated labels accordingly

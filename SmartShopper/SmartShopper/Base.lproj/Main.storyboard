@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="storeSchematic" translatesAutoresizingMaskIntoConstraints="NO" id="exk-C3-Oab">
-                                <rect key="frame" x="43" y="84.5" width="289" height="240.00000000000011"/>
+                                <rect key="frame" x="43" y="84.5" width="289" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="ZsK-wH-a3h"/>
                                     <constraint firstAttribute="width" constant="289" id="xIT-7d-JFB"/>

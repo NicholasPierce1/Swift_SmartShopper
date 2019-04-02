@@ -65,6 +65,7 @@ class WelcomeScreenViewController: UIViewController {
             
             // dismiss handler- render button invisible and have all labels appear
             self.reappearLabels()
+            self.searchButton.isHidden = true
         }
     }
     
@@ -83,14 +84,26 @@ class WelcomeScreenViewController: UIViewController {
         /* checks if department has multiple aisles (later: then grab label by aisle num-- index position in hash
         for deptName in deptListing.keys.filter(return $0 != selectedDepartment){ for label: UILabel? in deptListing[deptName]! { label?.isHidden=true }}
          if Store.shared.isMultiAsile(deptListing[selectedDepartment]!){
-         // hide all ailses in multiAisle dept BUT the one selected- for aisle in deptListing[selectedDepartment]!.count{ if !resultArray.contains(aisle) { deptListing[selectedDepartment]![aisle]?.isHidden = true }}}
+         // hide all ailses in multiAisle dept BUT the one selected-
+         for aisle in 0 ..< deptListing[selectedDepartment]!.count{ if !resultArray.contains(aisle) { deptListing[selectedDepartment]![aisle]?.isHidden = true }}}
          // not multi aisle and all non-match depts have been turned off. Do nothing
+         
+         // NOTE: doesn't work, if result array contains [7,8,9] then ailse won't match-- always start at 0
+         // Grocery: max department number-- 10, min -- 4
+         // Will work? !resultsArray.contains(ailse + 4)
+         // If results contain [4,10,6] then ailse that trigger false will be [0th ailse, 2nd ailse, and 6th ailse]
         */
         
         // turns all deptlabel that don't match selected department (temp)
         for deptLabel: UILabel? in deptListing.keys.filter({return $0 != selectedDepartment}).map({deptListing[$0]!}){
             deptLabel?.isHidden = true
         }
+    }
+    
+    // before segue turn on all labels and rehide search again
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.reappearLabels()
+        self.searchButton.isHidden = true
     }
 
 }

@@ -7,6 +7,7 @@
 //
 
 import XCTest
+//@testable import SmartShopper
 
 class SmartShopperTests: XCTestCase {
 
@@ -21,6 +22,10 @@ class SmartShopperTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        //Store.shared.returnDepartments()
+        //Department.departmentList
+        tester.testVar = 5
+        
     }
 
     func testPerformanceExample() {
@@ -31,4 +36,8 @@ class SmartShopperTests: XCTestCase {
         }
     }
 
+}
+
+private struct tester{
+    fileprivate static var testVar = 3
 }

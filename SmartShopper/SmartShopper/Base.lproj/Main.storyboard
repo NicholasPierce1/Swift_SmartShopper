@@ -431,6 +431,18 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="bakeryDept" destination="WEI-RK-1L0" id="kn9-ba-tyd"/>
+                        <outlet property="dairyDept" destination="pgF-N5-aK6" id="8Ji-Nx-sXV"/>
+                        <outlet property="deliDept" destination="R1D-GX-wh8" id="aWm-7g-unA"/>
+                        <outlet property="floralDept" destination="cbu-FL-Pls" id="PGO-N2-U3W"/>
+                        <outlet property="frozenDept" destination="Vo2-fD-WEX" id="IyE-Lp-gWR"/>
+                        <outlet property="groceryDept" destination="ekn-37-LXs" id="P8J-3U-4qp"/>
+                        <outlet property="healthBeautyDepartment" destination="wj8-7s-Ve9" id="FjU-If-INJ"/>
+                        <outlet property="meatDept" destination="j0r-eJ-ogu" id="SFL-gF-FKy"/>
+                        <outlet property="produceDept" destination="k36-jx-R2f" id="bst-LQ-OBC"/>
+                        <outlet property="seafoodDept" destination="nQv-cO-vm0" id="lKz-zn-tPG"/>
+                        <outlet property="searchButton" destination="eko-4A-8c7" id="KmK-IS-a4R"/>
+                        <outlet property="seasonalDept" destination="KBk-qn-wdA" id="fCD-uY-0ix"/>
                         <segue destination="zFV-CI-zqL" kind="unwind" identifier="searchAgain" unwindAction="unwindWith:" id="ojr-0Q-ggZ"/>
                     </connections>
                 </viewController>

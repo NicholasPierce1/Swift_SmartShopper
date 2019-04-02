@@ -19,7 +19,9 @@
 		DA0B50A922235B0D0008C579 /* AdminCreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50A822235B0D0008C579 /* AdminCreateAccountViewController.swift */; };
 		DA0B50AB22235B2E0008C579 /* AdminFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50AA22235B2E0008C579 /* AdminFeaturesViewController.swift */; };
 		DA11D5C022428E8E00F1FC3C /* SmartShopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11D5BF22428E8E00F1FC3C /* SmartShopperTests.swift */; };
+		DA38DC9A224C82E2005AF4C9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6944B622360651004EB7A4 /* Store.swift */; };
 		DA6944B722360651004EB7A4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6944B622360651004EB7A4 /* Store.swift */; };
+		DACE5AE22253F80500880BB4 /* AnotherTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE5AE12253F80500880BB4 /* AnotherTestFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		DA11D5BF22428E8E00F1FC3C /* SmartShopperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartShopperTests.swift; sourceTree = "<group>"; };
 		DA11D5C122428E8E00F1FC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6944B622360651004EB7A4 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		DACE5AE12253F80500880BB4 /* AnotherTestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherTestFile.swift; sourceTree = "<group>"; };
 		E92882EC0213C12BF743B163 /* Pods-SmartShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShopper.debug.xcconfig"; path = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				DA11D5BF22428E8E00F1FC3C /* SmartShopperTests.swift */,
+				DACE5AE12253F80500880BB4 /* AnotherTestFile.swift */,
 				DA11D5C122428E8E00F1FC3C /* Info.plist */,
 			);
 			path = SmartShopperTests;
@@ -332,7 +336,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DACE5AE22253F80500880BB4 /* AnotherTestFile.swift in Sources */,
 				DA11D5C022428E8E00F1FC3C /* SmartShopperTests.swift in Sources */,
+				DA38DC9A224C82E2005AF4C9 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,12 +494,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SmartShopper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MODULE_NAME = SmartShopper;
 				PRODUCT_BUNDLE_IDENTIFIER = SmartShopperTeam.SmartShopper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
@@ -508,12 +516,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SmartShopper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MODULE_NAME = SmartShopper;
 				PRODUCT_BUNDLE_IDENTIFIER = SmartShopperTeam.SmartShopper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
@@ -534,6 +544,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULE_NAME = SmartShopper;
 				PRODUCT_BUNDLE_IDENTIFIER = SmartShopperTeam.SmartShopperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -554,6 +565,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULE_NAME = SmartShopper;
 				PRODUCT_BUNDLE_IDENTIFIER = SmartShopperTeam.SmartShopperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

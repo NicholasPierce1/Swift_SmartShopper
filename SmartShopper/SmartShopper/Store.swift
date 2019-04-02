@@ -160,7 +160,7 @@ internal struct Department: CustomStringConvertible, Equatable, Hashable{
     }
     
     // shared list of predefined Departments
-    fileprivate static let departmentList : [Department] = [Department(name: "Grocery", minAisleNum: 10, maxAisleNum: 4), Department(name: "HBC", minAisleNum: 2, maxAisleNum: 4), Department(name: "Seasonal", minAisleNum: 1, maxAisleNum: 1), Department(name: "Meat", minAisleNum: -1, maxAisleNum: -1), Department(name: "Deli", minAisleNum: -1, maxAisleNum: -1), Department(name: "Bakery", minAisleNum: -1, maxAisleNum: -1), Department(name: "Produce", minAisleNum: -1, maxAisleNum: -1), Department(name: "Floral", minAisleNum: -1, maxAisleNum: -1), Department(name: "Frozen/Dairy", minAisleNum: -1, maxAisleNum: -1)]
+    fileprivate static let departmentList : [Department] = [Department(name: "Grocery", minAisleNum: 4, maxAisleNum: 10), Department(name: "HBC", minAisleNum: 2, maxAisleNum: 4), Department(name: "Seasonal", minAisleNum: 1, maxAisleNum: 1), Department(name: "Meat", minAisleNum: -1, maxAisleNum: -1), Department(name: "Deli", minAisleNum: -1, maxAisleNum: -1), Department(name: "Bakery", minAisleNum: -1, maxAisleNum: -1), Department(name: "Produce", minAisleNum: -1, maxAisleNum: -1), Department(name: "Floral", minAisleNum: -1, maxAisleNum: -1), Department(name: "Frozen/Dairy", minAisleNum: -1, maxAisleNum: -1)]
     
     // enumerates Department's attributes
     
@@ -234,7 +234,7 @@ internal struct Department: CustomStringConvertible, Equatable, Hashable{
 }
 
 // struct to retain state of Admin and their corresponding store
-private struct Admin: Equatable, Hashable {
+fileprivate struct Admin: Equatable, Hashable {
     
     // private Array containing all storePasswords
     private static let storePasswordAndNum: [Int : Int] = [404: 404, 123: 123, 987: 987] // initial data for demonstration

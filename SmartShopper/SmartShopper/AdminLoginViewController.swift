@@ -28,10 +28,10 @@ class AdminLoginViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    @IBAction func signupBtn(_ sender: Any) {
+    @IBAction func signupBtn(_ sender: Any?) {
         self.performSegue(withIdentifier: "createAdmin", sender: self)
     }
-    @IBAction func loginBtn(_ sender: Any) {
+    @IBAction func loginBtn(_ sender: Any?) {
         if let userName = userNameTF.text, let password = passwordTF.text, let spass = Int(spassTF.text!) {
             
             

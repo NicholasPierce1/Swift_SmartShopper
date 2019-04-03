@@ -27,7 +27,10 @@ class AdminCreateAccountViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    @IBAction func signupBtn(_ sender: Any) {
+    @IBAction func signupBtn(_ sender: Any?) {
+        // what is cpass?
+        // forStore takes in the store number... you are passing in the store password
+        // if password == cpass... why..?
         
         if let userName = userNameTF.text, let password = passwordTF.text, let cpass = cpassTF.text, let sPassword = Int(storePasswordTF.text!) {
             if password == cpass {

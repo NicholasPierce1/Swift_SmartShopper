@@ -27,10 +27,12 @@ class AdminCreateAccountViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    // what happens when back button is invoked? hint: think of how we can go back in modal viewController
+    
+    
     @IBAction func signupBtn(_ sender: Any?) {
-        // what is cpass?
         // forStore takes in the store number... you are passing in the store password
-        // if password == cpass... why..?
+        // once the admin sign up, you should segue back to login screen
         
         if let userName = userNameTF.text, let password = passwordTF.text, let cpass = cpassTF.text, let sPassword = Int(storePasswordTF.text!) {
             if password == cpass {

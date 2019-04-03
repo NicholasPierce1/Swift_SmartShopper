@@ -19,7 +19,8 @@ class AdminLoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func unwindToLogin(_ unwindSegue: UIStoryboardSegue) {}
+    // no need for unwind
+   // @IBAction func unwindToLogin(_ unwindSegue: UIStoryboardSegue) {}
     
     func display(title:String, msg:String) {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)

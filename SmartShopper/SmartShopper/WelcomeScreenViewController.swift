@@ -90,8 +90,9 @@ class WelcomeScreenViewController: UIViewController {
          
          // NOTE: doesn't work, if result array contains [7,8,9] then ailse won't match-- always start at 0
          // Grocery: max department number-- 10, min -- 4
-         // Will work? !resultsArray.contains(ailse + 4)
+         // Will work? !resultsArray.contains(ailse + department.minAilse)
          // If results contain [4,10,6] then ailse that trigger false will be [0th ailse, 2nd ailse, and 6th ailse]
+         // DO: acquire department OR add method that passes in deptmartment name and gets min ailse
         */
         
         // turns all deptlabel that don't match selected department (temp)
@@ -102,6 +103,14 @@ class WelcomeScreenViewController: UIViewController {
     
     // before segue turn on all labels and rehide search again
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.reappearLabels()
+        self.searchButton.isHidden = true
+    }
+    
+    // renders unwind segue for adminFeatures to logout to
+    @IBAction func unwind(_ segue: UIStoryboardSegue) -> Void {
+        
+        // reappears all labels and hides search button
         self.reappearLabels()
         self.searchButton.isHidden = true
     }

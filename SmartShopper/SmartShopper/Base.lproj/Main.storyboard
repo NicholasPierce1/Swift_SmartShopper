@@ -847,9 +847,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcu-Ex-EdW">
                                 <rect key="frame" x="312" y="45" width="48" height="30"/>
                                 <state key="normal" title="Logout"/>
-                                <connections>
-                                    <segue destination="emo-qE-wLw" kind="unwind" unwindAction="unwindToLogin:" id="37g-xN-68H"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3E-cW-wOx">
                                 <rect key="frame" x="50" y="45" width="30" height="30"/>
@@ -1024,6 +1021,7 @@
                     </view>
                     <connections>
                         <outlet property="departmentList" destination="lf1-Uc-2xp" id="Id7-cH-OMM"/>
+                        <segue destination="emo-qE-wLw" kind="unwind" identifier="unwind" unwindAction="unwind:" id="0Yq-fE-02B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p57-hg-ZfV" userLabel="First Responder" sceneMemberID="firstResponder"/>

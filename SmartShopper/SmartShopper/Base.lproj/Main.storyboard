@@ -473,7 +473,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Search Item" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
                                 <rect key="frame" x="87" y="41" width="201.5" height="43"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="201.5" id="G7S-mp-Xge"/>
                                 </constraints>
@@ -509,15 +509,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIJ-Hv-wW4">
-                                <rect key="frame" x="187.5" y="507" width="0.0" height="0.0"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="fg1-RB-GwJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And/Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPV-6n-e3l">
                                 <rect key="frame" x="167" y="159" width="41" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -532,16 +523,13 @@
                                 </connections>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Exu-MB-Lgl" secondAttribute="trailing" constant="57" id="45Q-e3-Zsz"/>
                             <constraint firstItem="Exu-MB-Lgl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MrX-5h-ENq" secondAttribute="trailing" constant="8" symbolic="YES" id="5vS-Xx-3Cs"/>
                             <constraint firstItem="zEq-FU-wV5" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="9wO-cZ-SAx"/>
-                            <constraint firstItem="1Wy-jv-1Yf" firstAttribute="top" secondItem="4WB-8d-Sha" secondAttribute="bottom" constant="34" id="A0d-aY-85L"/>
                             <constraint firstItem="Gyd-9f-o4c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UBk-2W-eV3" secondAttribute="trailing" constant="8" symbolic="YES" id="AhE-OB-gMW"/>
                             <constraint firstItem="Exu-MB-Lgl" firstAttribute="top" secondItem="UBk-2W-eV3" secondAttribute="bottom" constant="84.5" id="Ehe-SV-lQu"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="BIJ-Hv-wW4" secondAttribute="centerX" id="Flg-MZ-a93"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="1Wy-jv-1Yf" secondAttribute="bottom" constant="27" id="GCo-bs-vS7"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Exu-MB-Lgl" secondAttribute="trailing" constant="57" id="GzK-9F-P7B"/>
                             <constraint firstItem="4WB-8d-Sha" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="JlY-2w-nxo"/>
                             <constraint firstItem="4WB-8d-Sha" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="KGD-w0-tVZ"/>

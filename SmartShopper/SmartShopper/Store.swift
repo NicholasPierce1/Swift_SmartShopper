@@ -295,7 +295,8 @@ fileprivate struct Admin: Equatable, Hashable {
         if adminLogin.contains(tempAdmin) { // admin already exist
             return .adminAlreadyExist
         }
-        
+        //initializing with empty
+        _adminLogin = []
         // appends
         _adminLogin.update(with: tempAdmin)
         return .adminAdded

@@ -295,10 +295,10 @@ fileprivate struct Admin: Equatable, Hashable {
         if adminLogin.contains(tempAdmin) { // admin already exist
             return .adminAlreadyExist
         }
-        //initializing with empty
-        _adminLogin = []
-        // appends
+        
+        // appends admin now that admin is unique and store password is valid for store
         _adminLogin.update(with: tempAdmin)
+        
         return .adminAdded
     }
     
@@ -313,6 +313,14 @@ fileprivate struct Admin: Equatable, Hashable {
         // validates that admin exist and is not unique (erroneous username, pw, or storeNum)
         if !Admin.adminLogin.contains(Admin.init(userName: username, adminPassword: adminPassword, storeNumForAdmin: Admin.storePasswordAndNum[storePassword]! )) {
             // admin not found
+            return false
+        }
+        
+        // admin is unique (password and username) and the entered password is tailored to a store
+        // now check if store num is pointed to that admin
+        let admin = Admin.adminLogin.filter({return $0 == Admin.init(userName: username, adminPassword: adminPassword, storeNumForAdmin: Admin.storePasswordAndNum[storePassword]!)})[0]
+        
+        if admin.storeNumForAdmin != Admin.storePasswordAndNum[storePassword]!{ // store nums don't match with targeted admin
             return false
         }
         

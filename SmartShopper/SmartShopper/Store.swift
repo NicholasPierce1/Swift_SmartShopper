@@ -296,8 +296,9 @@ fileprivate struct Admin: Equatable, Hashable {
             return .adminAlreadyExist
         }
         
-        // appends
+        // appends admin now that admin is unique and store password is valid for store
         _adminLogin.update(with: tempAdmin)
+        
         return .adminAdded
     }
     
@@ -315,13 +316,21 @@ fileprivate struct Admin: Equatable, Hashable {
             return false
         }
         
+        // admin is unique (password and username) and the entered password is tailored to a store
+        // now check if store num is pointed to that admin
+        let admin = Admin.adminLogin.filter({return $0 == Admin.init(userName: username, adminPassword: adminPassword, storeNumForAdmin: Admin.storePasswordAndNum[storePassword]!)})[0]  // tho store num from password is passed, the admin returned is based off the username and password being equal-- so net effect is none
+        
+        if admin.storeNumForAdmin != Admin.storePasswordAndNum[storePassword]!{ // store nums don't match with targeted admin
+            return false
+        }
+        
         // password is tailored to a store AND that admin exist to that corresponding store
         return true
     }
     
     // determines equavlience for two admin
     fileprivate static func ==( lhs: Admin , rhs: Admin) -> Bool {
-        return lhs.userName == rhs.userName || lhs.adminPassword == rhs.adminPassword 
+        return lhs.userName == rhs.userName || lhs.adminPassword == rhs.adminPassword
     }
     
     // feeds integral components (that applied in equatable) into hash feeder
@@ -352,7 +361,7 @@ internal struct Store{
     
     // private initializer for Store
     private init(){}
-
+    
     // viewController calls to validate passed information from user is valid to append to the Store's department-item data structure.  Append if it is, return error code else
     internal func addItem(nameOfItem itemName: String, simplifiedSearchPhrase categoryName: String, vendor: String, barcode: String, toThisDepartment dept: Department, aisleOfItem aisleNum: Int! = nil) -> ReturnCode {
         
@@ -364,17 +373,17 @@ internal struct Store{
         if Department.validateEntry(isValid: aisleNum, for: dept) != .validAisle {
             return Department.validateEntry(isValid: aisleNum, for: dept)
         }
-        // verifies that the barcode is palatable
+            // verifies that the barcode is palatable
         else if Item.validateEntry(toValidate: barcode) != .validItem {
             return Item.validateEntry(toValidate: barcode)
         }
-        // verifies that item is unique to Department
+            // verifies that item is unique to Department
         else if itemFromVendorIsUnique(for: item, in: dept) != .itemFromVendorIsUnique {
             return itemFromVendorIsUnique(for: item, in: dept)
         }
         else {
-        // appends item to Department and returns that item has been appended
-        Store.shared.store[dept]![item.barcode] = item
+            // appends item to Department and returns that item has been appended
+            Store.shared.store[dept]![item.barcode] = item
             return .itemAdded
         }
     }
@@ -425,17 +434,17 @@ internal struct Store{
         if Department.validateEntry(isValid: aisleNum, for: dept) != .validAisle {
             return Department.validateEntry(isValid: aisleNum, for: dept)
         }
-        // verifies that barcode is suffice
+            // verifies that barcode is suffice
         else if Item.validateEntry(toValidate: barcode) != .validItem {
             return Item.validateEntry(toValidate: barcode)
         }
-        // verifies that barcode does exist within Department
+            // verifies that barcode does exist within Department
         else if Store.shared.store[dept]![barcode] == nil { // barcode is unique
             return .itemNotInStore
         }
         else {
-        // amends ailse num of item and returns that ailseNum is applied to item
-        Store.shared.store[dept]![barcode]!.aisleNum = aisleNum
+            // amends ailse num of item and returns that ailseNum is applied to item
+            Store.shared.store[dept]![barcode]!.aisleNum = aisleNum
             return .itemAisleNumChanged
         }
     }
@@ -447,17 +456,17 @@ internal struct Store{
         if Item.validateEntry(toValidate: barcode) != .validItem {
             return Item.validateEntry(toValidate: barcode)
         }
-        // verifies that barcode points to an item in specified Department
+            // verifies that barcode points to an item in specified Department
         else if Store.shared.store[dept]![barcode] == nil { // item is unique
             return .itemNotInStore
         }
         else {
-        // removes item and returns that item has been removed
-        Store.shared.store[dept]!.removeValue(forKey: barcode)
+            // removes item and returns that item has been removed
+            Store.shared.store[dept]!.removeValue(forKey: barcode)
             return .itemRemoved
         }
     }
-
+    
     // compiles are returns a list retaining to the locations of all the Item's queried.  If more than 3 locations are appended- or no results are garnered- then returns nil
     internal func search(findLocationOf searchName: String, in dept: Department) {
         
@@ -494,7 +503,7 @@ internal struct Store{
             NotificationCenter.default.post(name: Notification.Name.searchComplete, object: Store.shared, userInfo: ["results" : []])
         }
     }
-
+    
     // determines if an admin can login
     internal func login(username: String, adminPassword: String, storePassword: Int) -> Bool {
         

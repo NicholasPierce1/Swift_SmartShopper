@@ -18,10 +18,11 @@ class AdminLoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    // no need for unwind
-   // @IBAction func unwindToLogin(_ unwindSegue: UIStoryboardSegue) {}
-    
+    override func viewWillAppear(_ animated: Bool) {
+        userNameTF.text = ""
+        passwordTF.text = ""
+        spassTF.text = ""
+    }
     func display(title:String, msg:String) {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -42,6 +43,8 @@ class AdminLoginViewController: UIViewController {
             } else {
                 self.display(title: "Login Failed", msg: "Please check credentials")
             }
+        } else {
+            self.display(title: "Error", msg: "Please enter all required fields")
         }
     }
 //    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {

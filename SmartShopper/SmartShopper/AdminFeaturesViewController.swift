@@ -19,7 +19,10 @@ depList()
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func logoutBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     func depList() {
         let activity_list = UIPickerView()
         activity_list.delegate = self

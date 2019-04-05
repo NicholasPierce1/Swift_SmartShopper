@@ -32,11 +32,12 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-         //Store.shared.returnDepartmentName(for: Store.shared.returnDepartments()[row])
+        //Store.shared.returnDepartmentName(for: Store.shared.returnDepartments()[row])
     }
     
     @IBAction func search(_ sender: Any?) {
         // call Store.shared.search(passStuffHere)
+        //Store.shared.search(findLocationOf: <#T##String#>, in: <#T##Department#>)
     }
     
     // observer method that's triggered
@@ -49,7 +50,7 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
             // call segue with performSegue(withIdentifier: UIStoryBoardSegue, sender: Any?) {}
             // pass array and department NAME to WelcomeViewController
             
-
+            
         }
         // empty array--- bad search
         // raise alertcontroller to display error
@@ -62,14 +63,14 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     
-        @IBAction func doSomething(_ sender: Any?){
-            DispatchQueue.global(qos: .userInteractive).async{
-                // did stuff-- got new content
-                DispatchQueue.main.async {
-                    // updated labels accordingly
-                    // yields a DEADLOCK context switch
-                }
+    @IBAction func doSomething(_ sender: Any?){
+        DispatchQueue.global(qos: .userInteractive).async{
+            // did stuff-- got new content
+            DispatchQueue.main.async {
+                // updated labels accordingly
+                // yields a DEADLOCK context switch
             }
-            // do other stuff with labels
         }
+        // do other stuff with labels
+    }
 }

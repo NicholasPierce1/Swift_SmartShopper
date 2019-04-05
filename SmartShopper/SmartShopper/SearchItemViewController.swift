@@ -10,6 +10,8 @@ import UIKit
 
 class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    @IBOutlet weak var vendorTXT: UITextField!
+    @IBOutlet weak var itemTXT: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         

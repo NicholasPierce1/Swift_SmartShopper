@@ -573,6 +573,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="Search" selectedImage="Search" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="itemTXT" destination="Gyd-9f-o4c" id="z3b-Gy-jXM"/>
+                        <outlet property="vendorTXT" destination="Exu-MB-Lgl" id="OhY-HZ-Clt"/>
                         <segue destination="9pv-A4-QxB" kind="presentation" identifier="searchDisplay" id="Hoi-AC-u9P"/>
                     </connections>
                 </viewController>

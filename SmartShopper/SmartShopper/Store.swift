@@ -78,37 +78,37 @@ internal enum ReturnCode{  // internal due to cases being accessed/evaluated by 
 }
 
 // Struct to hold individual items
-fileprivate struct Item: Equatable{
+internal struct Item: Equatable{
     
     // enumerates private attribute with their corresponding computed properties to control external behaviors
     
     // name of item
     private var _name: String
-    fileprivate var name: String {  // read only
+    internal var name: String {  // read only
         return _name
     }
     
     // category name (used to facilitate searching for user: ex- don't type "2% lowfat skim milk" but just type "milk"
     private var _categoryName: String
-    fileprivate var categoryName: String{ // read only
+    internal var categoryName: String{ // read only
         return _categoryName
     }
     
     // vendor that supplies item
     private var _vendor: String
-    fileprivate var vendor: String { //read only
+    internal var vendor: String { //read only
         return _vendor
     }
     
     // unique barcode corresponding to item
     private var _barcode: String
-    fileprivate var barcode: String { // read only
+    internal var barcode: String { // read only
         return _barcode
     }
     
     // mutable value that denotes which asile the item can be found in
     private var _aisleNum: Int
-    internal var aisleNum: Int { // read and settable
+    internal var aisleNum: Int { // readable and settable
         get{
             return _aisleNum
         }
@@ -140,7 +140,7 @@ fileprivate struct Item: Equatable{
     }
     
     // renders, and returns, an Item
-    fileprivate static func createItem(name: String, categoryName: String, vendor: String, barcode: String, aisleNum: Int!) -> Item {
+    internal static func createItem(name: String, categoryName: String, vendor: String, barcode: String, aisleNum: Int!) -> Item {
         // invokes init and returns the object
         return Item.init(name: name, categoryName: categoryName, vendor: vendor, barcode: barcode, aisleNum: aisleNum != nil ? aisleNum : -1)
     }
@@ -172,13 +172,13 @@ internal struct Department: CustomStringConvertible, Equatable, Hashable{
     
     // maximun ailseNum that a Department has; if has no aisle num then -1
     private var _maxAisleNum: Int
-    fileprivate var maxAisleNum: Int { // read only
+    internal var maxAisleNum: Int { // read only
         return _maxAisleNum
     }
     
     // minimum ailseNum that a Department has; if has no aisle num then -1
     private var _minAisleNum: Int
-    fileprivate var minAisleNum: Int {
+    internal var minAisleNum: Int {
         return _minAisleNum
     }
     
@@ -188,7 +188,7 @@ internal struct Department: CustomStringConvertible, Equatable, Hashable{
     }
     
     // private initializer for Department
-    private init(name: String, minAisleNum: Int, maxAisleNum: Int){
+    internal init(name: String, minAisleNum: Int, maxAisleNum: Int){
         self._name = name
         self._maxAisleNum = maxAisleNum
         self._minAisleNum = minAisleNum

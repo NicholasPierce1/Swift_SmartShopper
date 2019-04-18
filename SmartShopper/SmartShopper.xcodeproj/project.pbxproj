@@ -21,7 +21,7 @@
 		DA11D5C022428E8E00F1FC3C /* SmartShopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11D5BF22428E8E00F1FC3C /* SmartShopperTests.swift */; };
 		DA38DC9A224C82E2005AF4C9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6944B622360651004EB7A4 /* Store.swift */; };
 		DA6944B722360651004EB7A4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6944B622360651004EB7A4 /* Store.swift */; };
-		DACE5AE22253F80500880BB4 /* AnotherTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE5AE12253F80500880BB4 /* AnotherTestFile.swift */; };
+		DACE5AE22253F80500880BB4 /* SearchFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE5AE12253F80500880BB4 /* SearchFeatures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		DA11D5BF22428E8E00F1FC3C /* SmartShopperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartShopperTests.swift; sourceTree = "<group>"; };
 		DA11D5C122428E8E00F1FC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6944B622360651004EB7A4 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		DACE5AE12253F80500880BB4 /* AnotherTestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherTestFile.swift; sourceTree = "<group>"; };
+		DACE5AE12253F80500880BB4 /* SearchFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeatures.swift; sourceTree = "<group>"; };
 		E92882EC0213C12BF743B163 /* Pods-SmartShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShopper.debug.xcconfig"; path = "Target Support Files/Pods-SmartShopper/Pods-SmartShopper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				DA11D5BF22428E8E00F1FC3C /* SmartShopperTests.swift */,
-				DACE5AE12253F80500880BB4 /* AnotherTestFile.swift */,
+				DACE5AE12253F80500880BB4 /* SearchFeatures.swift */,
 				DA11D5C122428E8E00F1FC3C /* Info.plist */,
 			);
 			path = SmartShopperTests;
@@ -336,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DACE5AE22253F80500880BB4 /* AnotherTestFile.swift in Sources */,
+				DACE5AE22253F80500880BB4 /* SearchFeatures.swift in Sources */,
 				DA11D5C022428E8E00F1FC3C /* SmartShopperTests.swift in Sources */,
 				DA38DC9A224C82E2005AF4C9 /* Store.swift in Sources */,
 			);

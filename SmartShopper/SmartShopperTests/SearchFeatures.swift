@@ -1,15 +1,14 @@
 //
-//  SmartShopperTests.swift
+//  AnotherTestFile.swift
 //  SmartShopperTests
 //
-//  Created by Nick Pierce on 3/20/19.
+//  Created by Nick Pierce on 4/2/19.
 //  Copyright © 2019 SmartShopperTeam. All rights reserved.
 //
 
 import XCTest
-//@testable import SmartShopper
 
-class SmartShopperTests: XCTestCase {
+class SearchFeatures: XCTestCase{
     
     // enumerates local variables that contain initial, model data
     
@@ -29,44 +28,77 @@ class SmartShopperTests: XCTestCase {
         departmentList[8]: ["820103680561": Item.createItem(name: "Organic 2% Lowfat Choclate Milk", categoryName: "Milk", vendor: "Kirkland", barcode: "820103680561", aisleNum: nil), "077567254238": Item.createItem(name: "Natural Vanilla Ice Cream", categoryName: "Ice Cream", vendor: "Breyers", barcode: "077567254238", aisleNum: nil)]]
     
     
- 
-
+    // restricts the calling of the search test to only one iteration
+    var iteration: Bool = false
+    
     override func setUp() {
-       
-    }
 
+    }
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // holds premodified copy
-        let premodified: Int = Tester.testVar
-        
-        // amends value of testerVar
-        Tester.testVarAddOne(&Tester.testVar)
-        
-        // asserts equalaity between the two instances
-        XCTAssertEqual(Tester.testVar, premodified + 1 )
         
     }
     
-    func testSomething(){
-        XCTAssertTrue(true)
+    // affirms that all department names match up
+    func testDepartmentMatch() -> Void {
+        // local array to hold department names
+        let departmentArray: [String] = ["Grocery", "HBC", "Seasonal", "Meat", "Deli", "Bakery", "Produce", "Floral", "Frozen/Dairy"]
+        
+        // iterates over all departments and checks if each name matches
+        for i in 0 ..< departmentArray.count{
+            
+            XCTAssert(departmentArray.contains(Array<Department>(SearchFeatures.store.keys).map({return Store.shared.returnDepartmentName(for: $0)})[i]))
+        }
+        
     }
     
-    func testDoesAddingEvenWork(){
-        XCTAssertTrue(true)
+    // affirms that all departments' current item list retains two items before searching commences
+    func testDepartmentItems() -> Void{
+       
+        // iterates over all Departments
+        for departmentList: [Item] in SearchFeatures.store.map({(dept, valueMap) in return Array<Item>(SearchFeatures.store[dept]!.values)}){
+            // each department's item list should contain only two items
+            XCTAssert(departmentList.count == 2, "actual count: \(departmentList.count)")
+        }
     }
-
-}
-
-private struct Tester{
-    fileprivate static var testVar: Int = 3
     
-    fileprivate static func testVarAddOne(_ testVar:inout Int) -> Void {
-        testVar += 1
+    // affirms that, when an input is passed and matches are yielded, an array of count 0 is returned
+    func testNoResults() {
+        
+        // invokes search method for each department
+        for dept: Department in SearchFeatures.store.keys {
+            let amountOfResults: Int = Store.shared.searchForTest(findLocationOf: "ThisShouldReturnNothing", forDepartment: dept) // grocery department
+        
+            XCTAssertTrue(amountOfResults == 0)
+        }
+        
     }
+    
+    // affirms that, when an input is passed and matches are yielded, an array of count 1 is returned
+    func testOneResult() {
+        
+        // invokes search method on background thread
+        let amountOfResults: Int = Store.shared.searchForTest(findLocationOf: "Cheez", forDepartment: SearchFeatures.departmentList[0]) // grocery department
+        
+        XCTAssertTrue(amountOfResults == 1)
+        
+    }
+    
+    // affirms that, when an input is passed and matches are yielded, an array of count 0 is returned
+    func testThreeResults() {
+        
+        // appends item to grocery department
+        SearchFeatures.store[SearchFeatures.departmentList[0]]!["000000000000"] = Item.createItem(name: "Cheez-Nips", categoryName: "Crackers", vendor: "Nabisco", barcode: "000000000000", aisleNum: 10)
+        
+        // invokes search method on background thread
+        let amountOfResults: Int = Store.shared.searchForTest(findLocationOf: "c", forDepartment: SearchFeatures.departmentList[0]) // grocery department
+        
+        XCTAssertTrue((amountOfResults == 2 ? 0 : amountOfResults) == 0, "resultsYielded: \(amountOfResults)")
+        
+        // removes test item from Grocery's item list
+        SearchFeatures.store[SearchFeatures.departmentList[0]]!.removeValue(forKey: "000000000000")
+        
+    }
+    
 }

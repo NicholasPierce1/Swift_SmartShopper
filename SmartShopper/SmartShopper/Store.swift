@@ -166,7 +166,7 @@ internal struct Department: CustomStringConvertible, Equatable, Hashable{
     
     // name of Department
     private var _name: String
-    fileprivate var name: String{ // read only
+    private var name: String{ // read only
         return _name
     }
     
@@ -366,7 +366,7 @@ internal struct Store{
     internal func addItem(nameOfItem itemName: String, simplifiedSearchPhrase categoryName: String, vendor: String, barcode: String, toThisDepartment dept: Department, aisleOfItem aisleNum: Int! = nil) -> ReturnCode {
         
         // renders Item (not done validating but encapsulating into an Item here facilitates tandem step
-        let item: Item = Item.createItem(name: itemName, categoryName: categoryName, vendor: vendor, barcode: barcode, aisleNum: dept.name == "Seasonal" ? 1 : aisleNum)
+        let item: Item = Item.createItem(name: itemName, categoryName: categoryName, vendor: vendor, barcode: barcode, aisleNum: self.returnDepartmentName(for: dept) == "Seasonal" ? 1 : aisleNum)
         
         // verifies that the ailseNum is valid for Department (if aisleNum is nil then -1 will be assigned later, but is valid because the corresponding Department is always a non-aisle department
         
@@ -502,6 +502,40 @@ internal struct Store{
             // post notification with defualt value
             NotificationCenter.default.post(name: Notification.Name.searchComplete, object: Store.shared, userInfo: ["results" : []])
         }
+    }
+    
+    // TEST ONLY method that doesn't utilize background thread
+    internal func searchForTest(findLocationOf searchName: String, forDepartment dept: Department) -> Int {
+        
+        // stores results of any matches (aisle location)
+        var arrayResult: [Int] = []
+        
+        // call on custom contain for each item in the department and popullate array
+        for item: Item in Store.shared.store[dept]!.values {
+            
+            // checks if search query is contained in categoryName || itemName
+            if item.categoryName.contains(substring: searchName) || item.name.contains(substring: searchName) {
+                
+                // append item's ailse num if unique
+                if !arrayResult.contains(item.aisleNum) { // append
+                    arrayResult.append(item.aisleNum)
+                }
+            }
+        }
+        
+        // evaluates how many items are comprised in query (if over 3 or nil return [])
+        if arrayResult.count != 0 {
+            
+            if arrayResult.count <= 2 {  // less than two item locations -- good query
+                //NotificationCenter.default.post(name: Notification.Name.searchComplete, object: Store.shared, userInfo: ["results" : arrayResult])
+                return arrayResult.count
+            }
+            
+        }
+        
+        // post notification with defualt value
+        //NotificationCenter.default.post(name: Notification.Name.searchComplete, object: Store.shared, userInfo: ["results" : []])
+        return 0
     }
     
     // determines if an admin can login

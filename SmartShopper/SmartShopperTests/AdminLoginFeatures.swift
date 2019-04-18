@@ -8,7 +8,13 @@
 
 import XCTest
 
-class AdminTests: XCTestCase {
+class AdminLoginFeatures: XCTestCase {
+    
+    // holds local data of Admin
+    private static let adminList: [Admin] = [Admin(userName: "Kevin Norris", adminPassword: "404", storeNumForAdmin: 404), Admin(userName: "Nick Pierce", adminPassword: "919359263", storeNumForAdmin: 123)]
+    
+    // holds local data for store: password matchup
+    private static let storePasswordAndNum: [Int : Int] = [404: 404, 123: 123, 987: 987]
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -23,9 +29,10 @@ class AdminTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let userName = "user"
         let password = "password"
-        let storeNumber = 404
         let storePassword = 404
+        let storeNumber = AdminLoginFeatures.storePasswordAndNum[storePassword]!
         let newAdmin = Store.shared.addAdmin(withUsername: userName, adminPassword: password, forStore: storeNumber, storePassword: storePassword)
+        
         
         //using ReturnCode for assertion
         XCTAssertTrue(newAdmin == ReturnCode.adminAdded)

@@ -234,7 +234,7 @@ internal struct Department: CustomStringConvertible, Equatable, Hashable{
 }
 
 // struct to retain state of Admin and their corresponding store
-fileprivate struct Admin: Equatable, Hashable {
+internal struct Admin: Equatable, Hashable {
     
     // private Array containing all storePasswords
     private static let storePasswordAndNum: [Int : Int] = [404: 404, 123: 123, 987: 987] // initial data for demonstration
@@ -244,7 +244,7 @@ fileprivate struct Admin: Equatable, Hashable {
     private static var _adminLogin: Set<Admin>!
     private static var adminLogin: Set<Admin>{ // read only
         get {  // checks for nil
-            return _adminLogin != nil ? _adminLogin : Set<Admin>()
+            return _adminLogin != nil ? _adminLogin : Set<Admin>(arrayLiteral: Admin(userName: "Kevin Norris", adminPassword: "404", storeNumForAdmin: 404), Admin(userName: "Nick Pierce", adminPassword: "919359263", storeNumForAdmin: 123))
         }
     }
     
@@ -252,24 +252,24 @@ fileprivate struct Admin: Equatable, Hashable {
     
     // username
     private let _userName: String  // userName does not change
-    fileprivate var userName: String {  // read only
+    internal var userName: String {  // read only
         return _userName
     }
     
     // adminPassword
     private var _adminPassword: String
-    fileprivate var adminPassword: String {  // read only
+    internal var adminPassword: String {  // read only
         return _adminPassword
     }
     
     // store number corresponding to admin
     private var _storeNumForAdmin: Int
-    fileprivate var storeNumForAdmin: Int{ // read only
+    internal var storeNumForAdmin: Int{ // read only
         return _storeNumForAdmin
     }
     
-    // private initializer
-    private init(userName: String, adminPassword: String, storeNumForAdmin: Int){
+    // internal initializer for TEST
+    internal init(userName: String, adminPassword: String, storeNumForAdmin: Int){
         self._userName = userName
         self._adminPassword = adminPassword
         self._storeNumForAdmin = storeNumForAdmin
@@ -331,12 +331,12 @@ fileprivate struct Admin: Equatable, Hashable {
     }
     
     // determines equavlience for two admin
-    fileprivate static func ==( lhs: Admin , rhs: Admin) -> Bool {
+    internal static func ==( lhs: Admin , rhs: Admin) -> Bool {
         return lhs.userName == rhs.userName || lhs.adminPassword == rhs.adminPassword
     }
     
     // feeds integral components (that applied in equatable) into hash feeder
-    fileprivate func hash(into hasher: inout Hasher){
+    internal func hash(into hasher: inout Hasher){
         hasher.combine(self.userName)
         hasher.combine(self.adminPassword)
     }

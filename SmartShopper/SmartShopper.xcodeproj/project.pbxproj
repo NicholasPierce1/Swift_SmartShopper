@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3557B35CEFB4CED047DAABB7 /* Pods_SmartShopper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284D1607DAB94F485E27B9BA /* Pods_SmartShopper.framework */; };
 		3D2063F0B35964ADB9B8B720 /* Pods_SmartShopperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4E9758AAAC030631AF423A /* Pods_SmartShopperTests.framework */; };
+		4C7AC2AF2268322500E82239 /* SmartShopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7AC2AE2268322500E82239 /* SmartShopperUITests.swift */; };
+		4C7AC2B72268330800E82239 /* InvalidUsertest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7AC2B62268330800E82239 /* InvalidUsertest.swift */; };
 		DA0B5091222358A00008C579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5090222358A00008C579 /* AppDelegate.swift */; };
 		DA0B5093222358A00008C579 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5092222358A00008C579 /* WelcomeScreenViewController.swift */; };
 		DA0B5095222358A00008C579 /* SearchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5094222358A00008C579 /* SearchItemViewController.swift */; };
@@ -25,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4C7AC2B12268322500E82239 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA0B5085222358A00008C579 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA0B508C222358A00008C579;
+			remoteInfo = SmartShopper;
+		};
 		DA11D5C222428E8E00F1FC3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA0B5085222358A00008C579 /* Project object */;
@@ -36,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		284D1607DAB94F485E27B9BA /* Pods_SmartShopper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartShopper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C7AC2AC2268322500E82239 /* SmartShopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartShopperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C7AC2AE2268322500E82239 /* SmartShopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartShopperUITests.swift; sourceTree = "<group>"; };
+		4C7AC2B02268322500E82239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C7AC2B62268330800E82239 /* InvalidUsertest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidUsertest.swift; sourceTree = "<group>"; };
 		67F36A939FDCFC411DFF3374 /* Pods-SmartShopperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShopperTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartShopperTests/Pods-SmartShopperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		700B7EB2E4B9089EF73280DB /* Pods-SmartShopperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShopperTests.release.xcconfig"; path = "Target Support Files/Pods-SmartShopperTests/Pods-SmartShopperTests.release.xcconfig"; sourceTree = "<group>"; };
 		7B4E9758AAAC030631AF423A /* Pods_SmartShopperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartShopperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +73,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4C7AC2A92268322500E82239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA0B508A222358A00008C579 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,11 +110,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4C7AC2AD2268322500E82239 /* SmartShopperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C7AC2B62268330800E82239 /* InvalidUsertest.swift */,
+				4C7AC2AE2268322500E82239 /* SmartShopperUITests.swift */,
+				4C7AC2B02268322500E82239 /* Info.plist */,
+			);
+			path = SmartShopperUITests;
+			sourceTree = "<group>";
+		};
 		DA0B5084222358A00008C579 = {
 			isa = PBXGroup;
 			children = (
 				DA0B508F222358A00008C579 /* SmartShopper */,
 				DA11D5BE22428E8E00F1FC3C /* SmartShopperTests */,
+				4C7AC2AD2268322500E82239 /* SmartShopperUITests */,
 				DA0B508E222358A00008C579 /* Products */,
 				3DB51C6EAF83B895D70E7133 /* Pods */,
 				FD6A00FE127E40144ED4FBB4 /* Frameworks */,
@@ -106,6 +137,7 @@
 			children = (
 				DA0B508D222358A00008C579 /* SmartShopper.app */,
 				DA11D5BD22428E8E00F1FC3C /* SmartShopperTests.xctest */,
+				4C7AC2AC2268322500E82239 /* SmartShopperUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +182,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4C7AC2AB2268322500E82239 /* SmartShopperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C7AC2B52268322500E82239 /* Build configuration list for PBXNativeTarget "SmartShopperUITests" */;
+			buildPhases = (
+				4C7AC2A82268322500E82239 /* Sources */,
+				4C7AC2A92268322500E82239 /* Frameworks */,
+				4C7AC2AA2268322500E82239 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C7AC2B22268322500E82239 /* PBXTargetDependency */,
+			);
+			name = SmartShopperUITests;
+			productName = SmartShopperUITests;
+			productReference = 4C7AC2AC2268322500E82239 /* SmartShopperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		DA0B508C222358A00008C579 /* SmartShopper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA0B50A1222358A40008C579 /* Build configuration list for PBXNativeTarget "SmartShopper" */;
@@ -194,10 +244,14 @@
 		DA0B5085222358A00008C579 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = SmartShopperTeam;
 				TargetAttributes = {
+					4C7AC2AB2268322500E82239 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = DA0B508C222358A00008C579;
+					};
 					DA0B508C222358A00008C579 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -222,11 +276,19 @@
 			targets = (
 				DA0B508C222358A00008C579 /* SmartShopper */,
 				DA11D5BC22428E8E00F1FC3C /* SmartShopperTests */,
+				4C7AC2AB2268322500E82239 /* SmartShopperUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4C7AC2AA2268322500E82239 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA0B508B222358A00008C579 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +380,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4C7AC2A82268322500E82239 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C7AC2B72268330800E82239 /* InvalidUsertest.swift in Sources */,
+				4C7AC2AF2268322500E82239 /* SmartShopperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA0B5089222358A00008C579 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -345,6 +416,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4C7AC2B22268322500E82239 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA0B508C222358A00008C579 /* SmartShopper */;
+			targetProxy = 4C7AC2B12268322500E82239 /* PBXContainerItemProxy */;
+		};
 		DA11D5C322428E8E00F1FC3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DA0B508C222358A00008C579 /* SmartShopper */;
@@ -372,6 +448,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4C7AC2B32268322500E82239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartShopperUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = prod.SmartShopperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartShopper;
+			};
+			name = Debug;
+		};
+		4C7AC2B42268322500E82239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartShopperUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = prod.SmartShopperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartShopper;
+			};
+			name = Release;
+		};
 		DA0B509F222358A40008C579 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -577,6 +691,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4C7AC2B52268322500E82239 /* Build configuration list for PBXNativeTarget "SmartShopperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C7AC2B32268322500E82239 /* Debug */,
+				4C7AC2B42268322500E82239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DA0B5088222358A00008C579 /* Build configuration list for PBXProject "SmartShopper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

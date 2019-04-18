@@ -31,18 +31,9 @@ class SmartShopperUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let loginTab = app.buttons["Login"]
         loginTab.tap()
-        //        let userNameField = app.textFields["username"]
-        //        userNameField.tap()
-        //        userNameField.typeText("")
-        //        let passwordField = app.textFields["password"]
-        //        passwordField.tap()
-        //        passwordField.typeText("")
-        //        let storePassword = app.textFields["storePassword"]
-        //        storePassword.tap()
-        //        storePassword.typeText("")
         let lognBtn = app.buttons["login"]
         lognBtn.tap()
         XCTAssertTrue(app.alerts["Error"].waitForExistence(timeout: 1))
     }
-
+    
 }

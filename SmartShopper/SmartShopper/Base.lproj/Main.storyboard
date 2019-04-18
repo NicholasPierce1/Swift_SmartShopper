@@ -592,6 +592,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utN-jw-l8d">
                                 <rect key="frame" x="146" y="452" width="72" height="39"/>
+                                <accessibility key="accessibilityConfiguration" identifier="SignUp"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
@@ -612,6 +613,7 @@
                             </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DR4-ik-bAS">
                                 <rect key="frame" x="195" y="151" width="159" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="userName"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="jCW-rW-a5A"/>
                                 </constraints>
@@ -621,12 +623,14 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5jF-g8-b11">
                                 <rect key="frame" x="195" y="211" width="159" height="32"/>
+                                <accessibility key="accessibilityConfiguration" identifier="password"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dvy-q7-AcQ">
                                 <rect key="frame" x="195" y="391" width="159" height="31"/>
+                                <accessibility key="accessibilityConfiguration" identifier="storePassword"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -663,6 +667,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CXh-Z5-d52">
                                 <rect key="frame" x="195" y="275" width="159" height="31"/>
+                                <accessibility key="accessibilityConfiguration" identifier="confirmPassword"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -675,6 +680,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yvT-fx-2Zo">
                                 <rect key="frame" x="195" y="334" width="159" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="storenumber"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -792,6 +798,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5G-YY-9WC">
                                 <rect key="frame" x="149" y="493" width="76" height="39"/>
+                                <accessibility key="accessibilityConfiguration" identifier="signUp"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="r1Y-iG-36W"/>
                                 </constraints>

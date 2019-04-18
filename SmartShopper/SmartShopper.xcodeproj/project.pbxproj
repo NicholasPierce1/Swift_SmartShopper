@@ -11,6 +11,7 @@
 		3D2063F0B35964ADB9B8B720 /* Pods_SmartShopperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4E9758AAAC030631AF423A /* Pods_SmartShopperTests.framework */; };
 		4C7AC2AF2268322500E82239 /* SmartShopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7AC2AE2268322500E82239 /* SmartShopperUITests.swift */; };
 		4C7AC2B72268330800E82239 /* InvalidUsertest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7AC2B62268330800E82239 /* InvalidUsertest.swift */; };
+		4C7AC2B922684B3A00E82239 /* AdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7AC2B822684B3A00E82239 /* AdminTests.swift */; };
 		DA0B5091222358A00008C579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5090222358A00008C579 /* AppDelegate.swift */; };
 		DA0B5093222358A00008C579 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5092222358A00008C579 /* WelcomeScreenViewController.swift */; };
 		DA0B5095222358A00008C579 /* SearchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B5094222358A00008C579 /* SearchItemViewController.swift */; };
@@ -49,6 +50,7 @@
 		4C7AC2AE2268322500E82239 /* SmartShopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartShopperUITests.swift; sourceTree = "<group>"; };
 		4C7AC2B02268322500E82239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C7AC2B62268330800E82239 /* InvalidUsertest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidUsertest.swift; sourceTree = "<group>"; };
+		4C7AC2B822684B3A00E82239 /* AdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTests.swift; sourceTree = "<group>"; };
 		67F36A939FDCFC411DFF3374 /* Pods-SmartShopperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShopperTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartShopperTests/Pods-SmartShopperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		700B7EB2E4B9089EF73280DB /* Pods-SmartShopperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShopperTests.release.xcconfig"; path = "Target Support Files/Pods-SmartShopperTests/Pods-SmartShopperTests.release.xcconfig"; sourceTree = "<group>"; };
 		7B4E9758AAAC030631AF423A /* Pods_SmartShopperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartShopperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,7 @@
 		DA11D5BE22428E8E00F1FC3C /* SmartShopperTests */ = {
 			isa = PBXGroup;
 			children = (
+				4C7AC2B822684B3A00E82239 /* AdminTests.swift */,
 				DA11D5BF22428E8E00F1FC3C /* SmartShopperTests.swift */,
 				DACE5AE12253F80500880BB4 /* SearchFeatures.swift */,
 				DA11D5C122428E8E00F1FC3C /* Info.plist */,
@@ -410,6 +413,7 @@
 				DACE5AE22253F80500880BB4 /* SearchFeatures.swift in Sources */,
 				DA11D5C022428E8E00F1FC3C /* SmartShopperTests.swift in Sources */,
 				DA38DC9A224C82E2005AF4C9 /* Store.swift in Sources */,
+				4C7AC2B922684B3A00E82239 /* AdminTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

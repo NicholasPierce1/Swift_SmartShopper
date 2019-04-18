@@ -277,7 +277,9 @@ fileprivate struct Admin: Equatable, Hashable {
     
     // checks if storePassword is suffice, username is unique for store, and then appends admin to that store.  Error code otherwise
     fileprivate static func addAdmin(userName: String, withPassword password: String, forStore store: Int, validateWith storePassword: Int) -> ReturnCode {
-        
+        //Error can be solved by using follwoing line as _adminLogin is nill initially.
+        //To pass testAddAdmin() uncomment below line
+        //_adminLogin = Set<Admin>()
         // checks if storePassword is correct/ points to a valid store and password to it is suffice
         if storePasswordAndNum[storePassword] != nil {  // store returned- check password
             if storePasswordAndNum[storePassword]! != store {

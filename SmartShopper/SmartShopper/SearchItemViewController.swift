@@ -12,6 +12,11 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     @IBOutlet weak var vendorTXT: UITextField!
     @IBOutlet weak var itemTXT: UITextField!
+    
+    // holds instance reference to acquired results
+    private var results: [Int]?
+    
+    private var selectedDept:Department!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,13 +38,23 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
         return Store.shared.returnDepartmentName(for: Store.shared.returnDepartments()[row])
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        //Store.shared.returnDepartmentName(for: Store.shared.returnDepartments()[row])
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
+        selectedDept = Store.shared.returnDepartments()[row]
     }
     
     @IBAction func search(_ sender: Any?) {
         // call Store.shared.search(passStuffHere)
-        //Store.shared.search(findLocationOf: <#T##String#>, in: <#T##Department#>)
+        if (selectedDept == nil) {
+            let alert = UIAlertController(title: "Error: Selected department not found",
+                                          message: "",
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default,
+                                          handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else {
+        Store.shared.search(findLocationOf: itemTXT.text!, in: selectedDept)
+        }
     }
     
     // observer method that's triggered
@@ -49,30 +64,27 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
         let passedInfo = notifcation.userInfo as! [String: [Int]]  // array will contain either [1,2,...] or it will be []
         
         if passedInfo["results"]!.count != 0 {
-            // call segue with performSegue(withIdentifier: UIStoryBoardSegue, sender: Any?) {}
-            // pass array and department NAME to WelcomeViewController
-            
-            
+            self.results = passedInfo["results"]!
+            performSegue(withIdentifier: "searchDisplay", sender: self)
         }
-        // empty array--- bad search
-        // raise alertcontroller to display error
-        
-    }
-    
-    override func performSegue(withIdentifier identifier: String, sender: Any?) {
-        // if called, then pass WelcomeVC the array and selectedDepartment name
-        // ALSO: denote the searchButton invisible
-    }
-    
-    
-    @IBAction func doSomething(_ sender: Any?){
-        DispatchQueue.global(qos: .userInteractive).async{
-            // did stuff-- got new content
-            DispatchQueue.main.async {
-                // updated labels accordingly
-                // yields a DEADLOCK context switch
+            else {  // empty array-- either no results or search target not specific enough
+                let alert = UIAlertController(title: "Error: Search unsuccessful",
+                                              message: "Please check spelling or be more specific",
+                                              preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default,
+                                              handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
-        }
-        // do other stuff with labels
     }
+        
+        
+        func prepareForSegue(segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "searchDisplay"{
+                let destination = segue.destination as! WelcomeScreenViewController
+                destination.resultArray = self.results!
+                destination.selectedDepartment = Store.shared.returnDepartmentName(for: selectedDept)
+            }
+            
+        }
+
 }

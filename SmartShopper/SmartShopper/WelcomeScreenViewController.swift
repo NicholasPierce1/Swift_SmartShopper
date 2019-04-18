@@ -58,6 +58,12 @@ class WelcomeScreenViewController: UIViewController {
         
     }*/
     
+    // unwind segue for admin user to logout-- destination
+    @IBAction func backToWelcome(_ segue: UIStoryboardSegue) -> Void{
+        // enjoins labels to reappear
+        self.reappearLabels()
+    }
+    
     // dismisses modal segue to permit subsequent search
     @IBAction func SearchAgain(_ sender: Any){
         // before next line, proceed with other setup between both UIViewcontrollers

@@ -32,7 +32,7 @@ class AdminFeaturesViewController: UIViewController, UIPickerViewDelegate, UIPic
     private var departmentSelected: Department!
     override func viewDidLoad() {
         super.viewDidLoad()
-depList()
+        depList()
         // Do any additional setup after loading the view.
     }
     override func  viewWillAppear(_ animated: Bool) {
@@ -59,13 +59,13 @@ depList()
         simplifiedPhraseTXT.isHidden = true
         simplifiedPhraseLBL.isHidden = true
     }
-    
+
     @IBAction func addBTN(_ sender: UIButton) {
         /*returnCode = addItem(nameOfItem itemName: String, simplifiedSearchPhrase categoryName: String, vendor: String, barcode: String, toThisDepartment dept: Department, aisleOfItem aisleNum: Int! = nil) -> ReturnCode */
         
         // firsts thing first: unhide (isHidden = false) to all labels and textfields for adding
         // second thing: hide everything else
-        
+    
         changeLanesNewAisleTXT.isHidden = true
         changeLanesBarcodeTXT.isHidden = true
         removeBarcodeTXT.isHidden = true
@@ -85,10 +85,13 @@ depList()
         nameLBL.isHidden = false
         simplifiedPhraseTXT.isHidden = false
         simplifiedPhraseLBL.isHidden = false
+        
         // third check if user entered valid data, if dept is multi and that ailse num can be an int if so
+        // return
         
         // calls method and checks results
-        let result: ReturnCode = Store.shared.addItem(nameOfItem: nameTXT.text!, simplifiedSearchPhrase: simplifiedPhraseTXT.text!, vendor: vendorTXT.text!, barcode: barcodeTXT.text!, toThisDepartment:  departmentSelected, aisleOfItem: Int(aisleNumTXT.text!)!)
+        let result: ReturnCode = Store.shared.addItem(nameOfItem: nameTXT.text!, simplifiedSearchPhrase: simplifiedPhraseTXT.text!, vendor: vendorTXT.text!, barcode: barcodeTXT.text!, toThisDepartment:  departmentSelected, aisleOfItem: Int(aisleNumTXT.text!))  // handles IF dept is NOT multi ailse
+        
         if (result == .aisleOutOfRangeForDeparment) {
             let alert = UIAlertController(title: "Item out of range for department",
                 message: "",
@@ -238,7 +241,8 @@ depList()
     
     
     @IBAction func logoutBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        //self.dismiss(animated: true, completion: nil)
+        self.performSegue(withIdentifier: "backToWelcome", sender: nil)
     }
     
     func depList() {
@@ -275,7 +279,7 @@ depList()
     // hides ailse number from picker view when adding items
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         departmentList.text = Store.shared.returnDepartmentName(for: Store.shared.returnDepartments()[row])
-        if (Store.shared.departmentIsMultiAisle(for: Store.shared.returnDepartments()[row]) == true) {
+        if (Store.shared.departmentIsMultiAisle(for: Store.shared.returnDepartments()[row])) {
             aisleNumLBL.isHidden = false
             aisleNumTXT.isHidden = false
         }
@@ -284,7 +288,7 @@ depList()
             aisleNumTXT.isHidden = true
          }
  
-        departmentList.text = Store.shared.returnDepartmentName(for:(Store.shared.returnDepartments()[row]) )
+        //departmentList.text = Store.shared.returnDepartmentName(for:(Store.shared.returnDepartments()[row]) )
         departmentSelected = Store.shared.returnDepartments()[row] // holds department
     }
 }

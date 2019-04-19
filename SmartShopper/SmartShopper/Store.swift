@@ -205,7 +205,7 @@ internal struct Department: CustomStringConvertible, Equatable, Hashable{
         // some aisles are nil for that dept is guranteed to not retain any aisles
         if dept.hasAisles {
             // aisle will always occupy a value here
-            return inRange(aisle: aisle!, forDepartment: dept) ? .aisleOutOfRangeForDeparment : .validAisle
+            return inRange(aisle: aisle!, forDepartment: dept) ? .validAisle : ReturnCode.aisleOutOfRangeForDeparment
         }
         
         // department doesn't retain any aisles. Good to proceed then
@@ -299,6 +299,7 @@ internal struct Admin: Equatable, Hashable {
         }
         
         // appends admin now that admin is unique and store password is valid for store
+        _adminLogin = adminLogin
         _adminLogin.update(with: tempAdmin)
         
         return .adminAdded
@@ -393,9 +394,11 @@ internal struct Store{
     // indicates whether the Item is truly unique to the department (barcode and vendor-itemName pair is unique)
     private func itemFromVendorIsUnique(for item: Item, in dept: Department) -> ReturnCode {
         
-        // checks if Department doesn't already contain that Item
-        if Store.shared.store[dept]![item.barcode] != nil {  // Item found in department
-            return .duplicateBarcode
+        // checks if the store doesn't already contain that Item's barcode
+        for deptList: [String:Item] in self.store.keys.map({return self.store[$0]!}){
+            if deptList[item.barcode] != nil { // barcode already exist here
+                return .duplicateBarcode
+            }
         }
         
         // checks if itemName-vendor pair of the Department is unique

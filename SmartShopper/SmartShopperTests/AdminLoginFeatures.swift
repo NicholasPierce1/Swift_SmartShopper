@@ -52,8 +52,8 @@ class AdminLoginFeatures: XCTestCase {
     }
     
     func testAdminLoginFailed() {
-        let userName = "user"
-        let password = "password"
+        let userName = "user1"
+        let password = "password1"
         let storePassword = 404
         //Testing without creating an admin
         XCTAssertFalse(Store.shared.login(username: userName, adminPassword: password, storePassword: storePassword))

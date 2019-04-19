@@ -22,6 +22,8 @@
 		DA0B50A722235AED0008C579 /* AdminLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50A622235AED0008C579 /* AdminLoginViewController.swift */; };
 		DA0B50A922235B0D0008C579 /* AdminCreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50A822235B0D0008C579 /* AdminCreateAccountViewController.swift */; };
 		DA0B50AB22235B2E0008C579 /* AdminFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B50AA22235B2E0008C579 /* AdminFeaturesViewController.swift */; };
+		DA0B75142269730E00A4F90F /* ChangeLaneFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B75132269730E00A4F90F /* ChangeLaneFeatures.swift */; };
+		DA0B75162269758B00A4F90F /* AdminAddFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B75152269758B00A4F90F /* AdminAddFeatures.swift */; };
 		DA11D5C022428E8E00F1FC3C /* AddItemFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11D5BF22428E8E00F1FC3C /* AddItemFeatures.swift */; };
 		DA38DC9A224C82E2005AF4C9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6944B622360651004EB7A4 /* Store.swift */; };
 		DA6944B722360651004EB7A4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6944B622360651004EB7A4 /* Store.swift */; };
@@ -68,6 +70,8 @@
 		DA0B50A622235AED0008C579 /* AdminLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginViewController.swift; sourceTree = "<group>"; };
 		DA0B50A822235B0D0008C579 /* AdminCreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCreateAccountViewController.swift; sourceTree = "<group>"; };
 		DA0B50AA22235B2E0008C579 /* AdminFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminFeaturesViewController.swift; sourceTree = "<group>"; };
+		DA0B75132269730E00A4F90F /* ChangeLaneFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLaneFeatures.swift; sourceTree = "<group>"; };
+		DA0B75152269758B00A4F90F /* AdminAddFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAddFeatures.swift; sourceTree = "<group>"; };
 		DA11D5BD22428E8E00F1FC3C /* SmartShopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartShopperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA11D5BF22428E8E00F1FC3C /* AddItemFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemFeatures.swift; sourceTree = "<group>"; };
 		DA11D5C122428E8E00F1FC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,11 +171,13 @@
 		DA11D5BE22428E8E00F1FC3C /* SmartShopperTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA0B75152269758B00A4F90F /* AdminAddFeatures.swift */,
 				4C7AC2B822684B3A00E82239 /* AdminLoginFeatures.swift */,
 				DA11D5BF22428E8E00F1FC3C /* AddItemFeatures.swift */,
 				DACE5AE12253F80500880BB4 /* SearchFeatures.swift */,
 				DA11D5C122428E8E00F1FC3C /* Info.plist */,
 				0419669E2269077800D07BA3 /* RemoveFeatures.swift */,
+				DA0B75132269730E00A4F90F /* ChangeLaneFeatures.swift */,
 			);
 			path = SmartShopperTests;
 			sourceTree = "<group>";
@@ -413,8 +419,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0B75142269730E00A4F90F /* ChangeLaneFeatures.swift in Sources */,
 				DACE5AE22253F80500880BB4 /* SearchFeatures.swift in Sources */,
 				DA11D5C022428E8E00F1FC3C /* AddItemFeatures.swift in Sources */,
+				DA0B75162269758B00A4F90F /* AdminAddFeatures.swift in Sources */,
 				DA38DC9A224C82E2005AF4C9 /* Store.swift in Sources */,
 				0419669F2269077800D07BA3 /* RemoveFeatures.swift in Sources */,
 				4C7AC2B922684B3A00E82239 /* AdminLoginFeatures.swift in Sources */,

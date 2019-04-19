@@ -81,7 +81,7 @@ class SearchFeatures: XCTestCase{
         // invokes search method on background thread
         let amountOfResults: Int = Store.shared.searchForTest(findLocationOf: "Cheez", forDepartment: SearchFeatures.departmentList[0]) // grocery department
         
-        XCTAssertTrue(amountOfResults == 1)
+        XCTAssertTrue(amountOfResults == 1, "error: \(amountOfResults)")
         
     }
     

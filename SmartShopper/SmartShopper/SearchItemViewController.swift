@@ -13,6 +13,8 @@ class SearchItemViewController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var vendorTXT: UITextField!
     @IBOutlet weak var itemTXT: UITextField!
     
+    @IBOutlet weak var pickerView: UIPickerView!
+    
     // holds instance reference to acquired results
     private var results: [Int]?
     
